@@ -4,7 +4,7 @@ pagination:
   data: collections.reviewPost
   size: 1
   alias: reviewPost
-permalink: "/entries/{{ reviewPost.slug | cleanSlug }}/index.html"
+permalink: "entries/{{ reviewPost.slug | cleanSlug }}/index.html"
 eleventyComputed:
   reviewPosts: "{{ reviewPost }}"
   title: "{{ reviewPost.title }}"
@@ -125,35 +125,38 @@ eleventyComputed:
     </section>
 
     <section class="prev-next">
+        {%- set previousEntry = null -%}
+        {%- set nextEntry = null -%}
+
+        {%- for item in collections.reviewPost -%}
+            {%- if item.slug == reviewPost.slug -%}
+                {%- if loop.index > 1 -%}
+                    {%- set previousEntry = collections.reviewPost[loop.index - 2] -%}
+                {%- endif -%}
+                {%- if loop.index < collections.reviewPost | length -%}
+                    {%- set nextEntry = collections.reviewPost[loop.index] -%}
+                {%- endif -%}
+            {%- endif -%}
+        {%- endfor -%}
+
         <div class="content-wrapper flex padding-both">
             <div class="prev-entry col-half">
-                {% if reviewPost.previous_post %}
-                    <p class="pagination-label">Previous Entry</p>
-                    <a class="blog-thumb" href="{{ reviewPost.previous_post.url }}">
-                        <article class="inner">
-                            <div class="thumb" data-bg="{{ reviewPost.previous_post.thumb }}"></div>
-                            <div class="content">
-                                <h2>{{ reviewPost.previous_post.title }}</h2>
-                            </div>
-                            <div class="post-date">{{ reviewPost.previous_post.date | date('n/d/Y') }}</div>
-                        </article>
+                {%- if previousEntry -%}
+                    <a href="/entries/{{ previousEntry.slug | cleanSlug }}">
+                        <img src="{{ previousEntry.seo.fields.featured_image.fields.file.url }}?w=300&h=200" alt="{{ previousEntry.title }}">
+                        <p style="color:white;">{{ previousEntry.title }}</p>
                     </a>
-                {% endif %}
+                {%- endif -%}
             </div>
             <div class="next-entry col-half">
-                {% if reviewPost.next_post %}
-                    <p class="pagination-label">Next Entry</p>
-                    <a class="blog-thumb" href="{{ reviewPost.next_post.url }}">
-                        <article class="inner">
-                            <div class="thumb" data-bg="{{ reviewPost.next_post.thumb }}"></div>
-                            <div class="content">
-                                <h2>{{ reviewPost.next_post.title }}</h2>
-                            </div>
-                            <div class="post-date">{{ reviewPost.next_post.date | date('n/d/Y') }}</div>
-                        </article>
+                {%- if nextEntry -%}
+                    <a href="/entries/{{ nextEntry.slug | cleanSlug }}">
+                        <img src="{{ nextEntry.seo.fields.featured_image.fields.file.url }}?w=300&h=200" alt="{{ nextEntry.title }}">
+                        <p style="color:white;">{{ nextEntry.title }}</p>
                     </a>
-                {% endif %}
+                {%- endif -%}
             </div>
         </div>
     </section>
+
 </article>
