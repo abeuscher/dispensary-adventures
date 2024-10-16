@@ -6,8 +6,14 @@ const { BuildScripts } = require("./build/scripts.js");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("date", dateFilter);
+  eleventyConfig.addFilter("cleanLineBreaks", (str) => {
+    return str.replace(/(\r\n|\n|\r)/gm, "");
+  });
   eleventyConfig.addFilter("prettyjson", (data) => {
     return JSON.stringify(data, undefined, 2);
+  });
+  eleventyConfig.addFilter("stringify", (data) => {
+    return JSON.stringify(data);
   });
   eleventyConfig.addFilter("cleanSlug", function (value) {
     if (typeof value === "string") {

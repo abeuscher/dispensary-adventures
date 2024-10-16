@@ -1,7 +1,7 @@
 {
   "name": "dispensary-adventures",
   "version": "1.0.0",
-  "description": "Static site built with 11ty, Swiper, Lodash, Sass, Contentful integration, and Prettier",
+  "description": "Static site built with 11ty, Swiper, Lodash, Sass, Contentful integration, and Prettier. For dispensaryadventures.com/",
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy && webpack",

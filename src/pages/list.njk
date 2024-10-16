@@ -1,0 +1,16 @@
+---
+layout: base.njk
+title: Comparison Table
+permalink: /list/
+---
+{% set reviews = collections.reviewPost | dump | stringify | cleanLineBreaks %}
+<script>
+  var productData = {{ reviews | safe }};
+</script>
+<article>
+  <section class="article-main-block padding-both">
+    <div class="content-wrapper">
+      <div id="product-table-sortable"></div>
+    </div>
+  </section>
+</article>

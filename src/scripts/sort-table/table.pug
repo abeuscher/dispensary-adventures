@@ -25,14 +25,14 @@ if productData !== undefined
                         p!=header.label
         .table-body
             each product in products
-                .table-body-row.table-row
-                    - console.log(product)
-                    each item in product
-                        .table-body-cell.table-cell(class=(item.mobile ? item.type : item.type + " hide-mobile")+(item.score ? " score" : ""))
-                            if (item.link)
-                                a(href=item.link)
+                if product[0].value!=''
+                    .table-body-row.table-row
+                        each item in product
+                            .table-body-cell.table-cell(class=(item.mobile ? item.type : item.type + " hide-mobile")+(item.score ? " score" : ""))
+                                if (item.link)
+                                    a(href=item.link)
+                                        p(class=item.label.toLowerCase().replace(/\W/g, ''))!=item.value
+                                else
                                     p(class=item.label.toLowerCase().replace(/\W/g, ''))!=item.value
-                            else
-                                p(class=item.label.toLowerCase().replace(/\W/g, ''))!=item.value
 else 
     p No products to display
