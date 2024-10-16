@@ -7,16 +7,9 @@ eleventyComputed:
   description: "I am a middle aged professional living in Amherst, MA. This is a series of reviews of the cannabis that I buy and smoke."
   metaUrl: "https://dispensaryadventures.com/"
 ---
-{%- from "../macros/debugger.njk" import debugger -%}
-{% set reviews = collections.reviewPost | dump | stringify | cleanLineBreaks %}
 {% from "../macros/blog-thumb.njk" import blogthumb %}
-<script>
-    var productData = {{ reviews | safe }};
-</script>
-<article>
-    <pre>{{ debugger(collections.page) }}</pre>
-    <pre>{{ debugger(collections.reviewPost) }}</pre>
 
+<article>
     <div class="content-wrapper padding-top"></div>
     <div class="content-wrapper padding-bottom">
         <div class="home-blogroll" id="post-bucket">

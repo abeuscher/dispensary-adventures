@@ -89,8 +89,4 @@ var siteActions = [
     element: "[data-bg-array]",
     action: require("./utils/data-bg-array.js"),
   },
-  {
-    element: "#more-posts",
-    action: require("./get-posts/index.js"),
-  },
 ];
