@@ -2,9 +2,11 @@ const sass = require("sass");
 const fs = require("fs");
 const path = require("path");
 
-function BuildStyles(eleventyConfig) {
-  // Watch the SCSS files during development
-  eleventyConfig.addWatchTarget("./src/styles/**/*.scss");
+function BuildStyles(eleventyConfig, isWatchMode = false) {
+  if (isWatchMode) {
+    // Watch the styles directory for changes
+    eleventyConfig.addWatchTarget("./src/styles/theme.scss");
+  }
 
   // Ensure the output directory exists
   const outputDir = path.join(__dirname, "../dist/styles");

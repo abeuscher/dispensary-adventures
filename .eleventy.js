@@ -61,8 +61,8 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy({ "src/public": "./" });
-  BuildStyles(eleventyConfig);
-  BuildScripts(eleventyConfig, process.env.WATCH_MODE);
+  BuildStyles(eleventyConfig, process.env.WATCH_MODE === "true");
+  BuildScripts(eleventyConfig, process.env.WATCH_MODE === "true");
 
   return {
     dir: {
