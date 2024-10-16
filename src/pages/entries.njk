@@ -4,11 +4,18 @@ pagination:
   data: collections.reviewPost
   size: 1
   alias: reviewPost
-permalink: "entries/{{ reviewPost.slug | cleanSlug }}/index.html"
+permalink: "{{ reviewPost.permalink }}"
 eleventyComputed:
   reviewPosts: "{{ reviewPost }}"
   title: "{{ reviewPost.title }}"
+  description: "{{ reviewPost.short_review }}"
+  metaImage: "{{ reviewPost.featured_image.fields.file.url }}"
+  metaUrl: "{{ reviewPost.permalink }}"
 ---
+{% from "../macros/pagination.njk" import nextprevious %}
+{% from "../macros/gallery.njk" import gallery %}
+{% from "../macros/product-info-flower.njk" import productinfo %}
+{% from "../macros/scoring.njk" import scoring %}
 
 <article role="article" itemprop="haspart" itemscope itemtype="http://schema.org/Article">
     <meta itemscope="itemscope" itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage">
@@ -26,62 +33,9 @@ eleventyComputed:
         </div>
     </section>
 
-    <section class="photos-block bg-black">
-        <div class="content-wrapper">
-            <div class="swiper" id="review-carousel">
-                <div class="swiper-wrapper">
-                    {% for photo in reviewPost.photos %}
-                        <div class="swiper-slide">
-                            <div class="inner">
-                                <img src="{{ photo.fields.file.url }}" alt=""/>
-                                {% if photo.caption %}
-                                    <div class="caption">{{ photo.caption }}</div>
-                                {% endif %}
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-    </section>
+    {{ gallery(reviewPost.photos) }}
 
-    <section class="product-meta-block bg-dark-green">
-        <div class="content-wrapper">
-            <div class="product-meta">
-                <div class="data-block">
-                    <div class="data-point brand">
-                        <span class="label">Brand</span>
-                        <span class="value">{{ reviewPost.product_info.fields.brand }}</span>
-                    </div>
-                    <div class="data-point product-type">
-                        <span class="label">Strain</span>
-                        <span class="value">{{ reviewPost.product_info.fields.strain }}</span>
-                    </div>
-                </div>
-                <div class="data-block">
-                    <div class="data-point price">
-                        <span class="label">Price Point</span>
-                        <span class="value">{{ reviewPost.product_info.fields.price }} (${{ (reviewPost.product_info.fields.cost / reviewPost.product_info.fields.weight) | round(2) }} / gram)</span>
-                    </div>
-                    <div class="data-point thc">
-                        <span class="label">Listed THC</span>
-                        <span class="value">{{ reviewPost.product_info.fields.listed_thc_percentage }}&#37;</span>
-                    </div>
-                </div>
-                <div class="data-block">
-                    <div class="data-point package-date">
-                        <span class="label">Packaged</span>
-                        <span class="value">{{ reviewPost.product_info.fields.package_date }}</span>
-                    </div>
-                    <div class="data-point purchase-date">
-                        <span class="label">Purchased</span>
-                        <span class="value">{{ reviewPost.product_info.fields.purchase_date }} from {{ reviewPost.product_info.fields.dispensary }}</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    {{ productinfo(reviewPost.product_info.fields) }}
 
     <section class="article-main-block padding-both">
         <div class="content-wrapper" itemprop="articleBody">
@@ -89,74 +43,8 @@ eleventyComputed:
         </div>
     </section>
 
-    <section class="product-scores-block bg-green padding-bottom">
-        <div class="content-wrapper">
-            <div class="product-scores">
-                <div class="data-score">
-                    <span class="label">Strength:</span>
-                    <span class="value">{{ reviewPost.scores.fields.strength }}/10</span>
-                    <div class="score-content">
-                        <div class="notes">{{ reviewPost.scores.fields.strength_notes | safe }}</div>
-                    </div>
-                </div>
-                <div class="data-score">
-                    <span class="label">Taste:</span>
-                    <span class="value">{{ reviewPost.scores.fields.taste }}/10</span>
-                    <div class="score-content">
-                        <div class="notes">{{ reviewPost.scores.fields.taste_notes | safe }}</div>
-                    </div>
-                </div>
-                <div class="data-score">
-                    <span class="label">Appearance:</span>
-                    <span class="value">{{ reviewPost.scores.fields.quality }}/10</span>
-                    <div class="score-content">
-                        <div class="notes">{{ reviewPost.scores.fields.quality_notes | safe }}</div>
-                    </div>
-                </div>
-                <div class="data-final">
-                    <span class="label">Overall Score:</span>
-                    <span class="value">{{ reviewPost.scores.fields.strength + reviewPost.scores.fields.taste + reviewPost.scores.fields.quality }}/30</span>
-                    <div class="score-content">
-                        <div class="notes">{{ reviewPost.scores.fields.overall_notes | safe }}</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    {{ scoring(reviewPost.scores.fields) }}
 
-    <section class="prev-next">
-        {%- set previousEntry = null -%}
-        {%- set nextEntry = null -%}
-
-        {%- for item in collections.reviewPost -%}
-            {%- if item.slug == reviewPost.slug -%}
-                {%- if loop.index > 1 -%}
-                    {%- set previousEntry = collections.reviewPost[loop.index - 2] -%}
-                {%- endif -%}
-                {%- if loop.index < collections.reviewPost | length -%}
-                    {%- set nextEntry = collections.reviewPost[loop.index] -%}
-                {%- endif -%}
-            {%- endif -%}
-        {%- endfor -%}
-
-        <div class="content-wrapper flex padding-both">
-            <div class="prev-entry col-half">
-                {%- if previousEntry -%}
-                    <a href="/entries/{{ previousEntry.slug | cleanSlug }}">
-                        <img src="{{ previousEntry.seo.fields.featured_image.fields.file.url }}?w=300&h=200" alt="{{ previousEntry.title }}">
-                        <p style="color:white;">{{ previousEntry.title }}</p>
-                    </a>
-                {%- endif -%}
-            </div>
-            <div class="next-entry col-half">
-                {%- if nextEntry -%}
-                    <a href="/entries/{{ nextEntry.slug | cleanSlug }}">
-                        <img src="{{ nextEntry.seo.fields.featured_image.fields.file.url }}?w=300&h=200" alt="{{ nextEntry.title }}">
-                        <p style="color:white;">{{ nextEntry.title }}</p>
-                    </a>
-                {%- endif -%}
-            </div>
-        </div>
-    </section>
+    {{ nextprevious(collections.reviewPost, reviewPost) }}
 
 </article>

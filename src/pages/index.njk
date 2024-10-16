@@ -4,23 +4,18 @@ title: Home Page
 permalink: /
 ---
 {%- from "../macros/debugger.njk" import debugger -%}
+{% set reviews = collections.reviewPost | dump | stringify | cleanLineBreaks %}
+{% from "../macros/blog-thumb.njk" import blogthumb %}
+<script>
+    var productData = {{ reviews | safe }};
+</script>
 <article>
     <div class="content-wrapper padding-top"></div>
     <div class="content-wrapper padding-bottom">
         <div class="home-blogroll" id="post-bucket">
-
-            {% for post in collections.reviewPost %}
-
-                <a class="blog-thumb" href="/entries/{{ post.slug | cleanSlug }}/">
-                    <article class="inner">
-                        <div class="thumb" data-bg="{{ post.seo.fields.featured_image.fields.file.url }}?w=400&w=300"></div>
-                        <div class="content">
-                            <h2>{{ post.title }}</h2>
-                        </div>
-                        <p>{{debugger(post.seo.fields.featured_image.fields)}}</p>
-                        <div class="post-date">{{ post.date | date('MM/DD/YYYY') }}</div>
-                    </article>
-                </a>
+            {% set latest_posts = collections.reviewPost %}
+            {% for post in latest_posts %}
+                {{ blogthumb(post) }}
             {% endfor %}
         </div>
     </div>
