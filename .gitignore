@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+
+# Output directory (publish directory)
+dist/
+
+# Sass cache
+.sass-cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
