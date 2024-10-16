@@ -8,14 +8,15 @@ permalink: "{{ reviewPost.permalink }}"
 eleventyComputed:
   reviewPosts: "{{ reviewPost }}"
   title: "{{ reviewPost.title }}"
-  description: "{{ reviewPost.short_review }}"
-  metaImage: "{{ reviewPost.featured_image.fields.file.url }}"
+  description: "{{ reviewPost.seo.fields.description }}"
+  metaImage: "{{ reviewPost.seo.fields.featured_image.fields.file.url }}"
   metaUrl: "{{ reviewPost.permalink }}"
 ---
 {% from "../macros/pagination.njk" import nextprevious %}
 {% from "../macros/gallery.njk" import gallery %}
 {% from "../macros/product-info-flower.njk" import productinfo %}
 {% from "../macros/scoring.njk" import scoring %}
+{% from "../macros/debugger.njk" import debugger %}
 
 <article role="article" itemprop="haspart" itemscope itemtype="http://schema.org/Article">
     <meta itemscope="itemscope" itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage">
