@@ -61,6 +61,23 @@ const getFields = (eleventyConfig) => {
       return fields;
     });
   });
+  eleventyConfig.addCollection("homepage", async () => {
+    const entries = await client.getEntries({
+      content_type: "homepage",
+    });
+
+    return entries.items.map((item) => {
+      const fields = item.fields;
+
+      if (fields.date) {
+        fields.date = new Date(fields.date);
+      }
+      if (fields.pageContent) {
+        fields.pageContentHtml = documentToHtmlString(fields.pageContent, options);
+      }
+      return fields;
+    });
+  });
 };
 
 module.exports = { getFields };

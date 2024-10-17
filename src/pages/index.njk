@@ -3,14 +3,14 @@ layout: base.njk
 title: Home Page
 permalink: /
 eleventyComputed:
-  title: "Dispensary Adventures"
-  description: "I am a middle aged professional living in Amherst, MA. This is a series of reviews of the cannabis that I buy and smoke."
+  title: "{{ collections.homepage[0].title | default('Home Page') }}"
+  description: "{{ collections.homepage[0].seo.fields.description | default('Default description') }}"
   metaUrl: "https://dispensaryadventures.com/"
 ---
 {% from "../macros/blog-thumb.njk" import blogthumb %}
 
 <article>
-    <div class="content-wrapper padding-top"></div>
+    <div class="content-wrapper padding-top">{{ collections.homepage[0].pageContentHtml | safe }}</div>
     <div class="content-wrapper padding-bottom">
         <div class="home-blogroll" id="post-bucket">
             {% set latest_posts = collections.reviewPost %}
