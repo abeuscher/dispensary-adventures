@@ -31,10 +31,12 @@
   }
   .post-date {
     position: absolute;
-    right: $gutter-width;
-    top: $gutter-width;
+    right: calc($gutter-width/2);
+    top: calc($gutter-width/2);
     color: $white;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2px;
   }
   .content {
     position: absolute;
