@@ -13,6 +13,10 @@ function ReviewCarousel(els) {
         nextEl: els[0].querySelectorAll(".swiper-button-next")[0],
         prevEl: els[0].querySelectorAll(".swiper-button-prev")[0],
       },
+      lazy: {
+        loadPrevNext: true,
+        loadPrevNextAmount: 2,
+      },
     });
 
     // Force update after initialization
