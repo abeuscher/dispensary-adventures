@@ -25,6 +25,7 @@
   }
   .thumb {
     @include aspect-ratio(346, 260);
+    overflow: hidden;
     img {
       width: 100%;
       height: auto;
