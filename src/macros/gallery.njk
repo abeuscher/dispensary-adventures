@@ -5,7 +5,7 @@
                 <div class="swiper-wrapper">
                     {% for photo in photos %}
                         <div class="swiper-slide">
-                            <img src="{{ photo.fields.file.url }}" alt=""/>
+                            <img src="{{ photo.fields.file.url }}?fm=webp" alt=""/>
                             {% if photo.caption %}
                                 <div class="caption">{{ photo.caption }}</div>
                             {% endif %}

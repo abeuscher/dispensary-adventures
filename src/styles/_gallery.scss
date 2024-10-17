@@ -25,6 +25,10 @@
       opacity: 1;
     }
   }
+  .swiper-slide {
+    aspect-ratio: 2160 / 1620;
+    background: #333;
+  }
   .swiper-pagination {
     position: relative;
     margin-top: 30px;
