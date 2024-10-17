@@ -1,7 +1,6 @@
 var Swiper = require("swiper/bundle").default;
 
 function ReviewCarousel(els) {
-  console.log(els[0].querySelectorAll(".swiper-pagination")[0]);
   if (els[0].querySelectorAll(".swiper-slide").length > 1) {
     var rc = new Swiper(els[0], {
       loop: true,
