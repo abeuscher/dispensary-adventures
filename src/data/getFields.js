@@ -25,7 +25,7 @@ const getFields = (eleventyConfig) => {
   eleventyConfig.addCollection("reviewPost", async () => {
     const entries = await client.getEntries({
       content_type: "reviewPost",
-      order: "sys.createdAt",
+      order: "-fields.date",
     });
 
     return entries.items.map((item) => {
