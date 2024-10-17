@@ -24,6 +24,7 @@
     padding: calc($gutter-width/2);
   }
   .thumb {
+    @include aspect-ratio(346, 260);
     img {
       width: 100%;
       height: auto;
