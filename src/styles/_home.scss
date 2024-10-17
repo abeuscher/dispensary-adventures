@@ -24,11 +24,9 @@
     padding: calc($gutter-width/2);
   }
   .thumb {
-    @include aspect-ratio(4, 3);
-    & {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
+    img {
+      width: 100%;
+      height: auto;
     }
   }
   .post-date {
