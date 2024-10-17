@@ -46,12 +46,4 @@ const siteActions = [
     element: "#review-carousel",
     action: ReviewCarousel,
   },
-  {
-    element: "[data-bg]",
-    action: require("./utils/data-bg.js"),
-  },
-  {
-    element: "[data-bg-array]",
-    action: require("./utils/data-bg-array.js"),
-  },
 ];
