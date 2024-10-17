@@ -17,7 +17,7 @@ const BuildScripts = async (eleventyConfig, isWatchMode = false) => {
       ".js": "jsx",
     },
     plugins: [pugFunctionPlugin],
-    minify: false,
+    minify: !isWatchMode,
     platform: "browser",
     sourcemap: true,
   };
