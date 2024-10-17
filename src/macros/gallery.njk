@@ -1,14 +1,13 @@
-{%- macro gallery(photos) -%}
+{% from "./responsive-picture.njk" import responsiveImage %}
+
+{% macro gallery(photos) %}
     <section class="photos-block bg-black">
         <div class="content-wrapper">
             <div class="swiper" id="review-carousel">
                 <div class="swiper-wrapper">
                     {% for photo in photos %}
                         <div class="swiper-slide">
-                            <img src="{{ photo.fields.file.url }}?fm=webp" alt=""/>
-                            {% if photo.caption %}
-                                <div class="caption">{{ photo.caption }}</div>
-                            {% endif %}
+                            {{ responsiveImage(photo.fields.file.url, "") }}
                         </div>
                     {% endfor %}
                 </div>
@@ -18,4 +17,4 @@
             </div>
         </div>
     </section>
-{%- endmacro -%}
+{% endmacro %}

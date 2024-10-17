@@ -1,0 +1,10 @@
+{% macro responsiveImage(imageUrl, altText) %}
+    <picture>
+        <source media="(min-width: 1921px)" srcset="{{ imageUrl }}?w=1920&fm=webp">
+        <source media="(min-width: 1201px)" srcset="{{ imageUrl }}?w=1200&fm=webp">
+        <source media="(min-width: 1025px)" srcset="{{ imageUrl }}?w=1024&fm=webp">
+        <source media="(min-width: 641px)" srcset="{{ imageUrl }}?w=640&fm=webp">
+        <source media="(min-width: 320px)" srcset="{{ imageUrl }}?w=320&fm=webp">
+        <img src="{{ imageUrl }}?w=320" alt="{{ altText }}" loading="lazy">
+    </picture>
+{% endmacro %}
