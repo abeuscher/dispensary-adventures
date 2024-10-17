@@ -29,7 +29,7 @@ eleventyComputed:
         <div class="review-header bg-black">
             <div class="content-wrapper">
                 <h1 itemprop="headline">{{ reviewPost.title }}</h1>
-                <p>{{ reviewPost.short_review }}</p>
+                <p>{{ reviewPost.short_review | markdownify | safe }}</p>
             </div>
         </div>
     </section>
@@ -40,7 +40,7 @@ eleventyComputed:
 
     <section class="article-main-block padding-both">
         <div class="content-wrapper" itemprop="articleBody">
-            {{ reviewPost.long_review | safe }}
+            {{ reviewPost.long_review | markdownify | safe }}
         </div>
     </section>
 

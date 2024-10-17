@@ -1,4 +1,10 @@
 const dateFilter = require("nunjucks-date");
+const markdownIt = require("markdown-it");
+const markdownLib = markdownIt({
+  html: true,
+  linkify: true,
+  typographer: true,
+});
 
 const addFilters = (eleventyConfig) => {
   eleventyConfig.addFilter("date", dateFilter);
@@ -22,7 +28,9 @@ const addFilters = (eleventyConfig) => {
     }
     return value;
   });
-
+  eleventyConfig.addFilter("markdownify", (content) => {
+    return markdownLib.render(content || ""); // Convert Markdown to HTML
+  });
   eleventyConfig.addFilter("date", dateFilter);
   eleventyConfig.addFilter("cleanLineBreaks", (str) => {
     return str.replace(/(\r\n|\n|\r)/gm, "");
