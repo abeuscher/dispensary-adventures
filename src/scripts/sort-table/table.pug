@@ -29,8 +29,8 @@ if productData !== undefined
                     .table-body-row.table-row
                         each item in product
                             .table-body-cell.table-cell(class=(item.mobile ? item.type : item.type + " hide-mobile")+(item.score ? " score" : ""))
-                                if (item.link)
-                                    a(href=item.link)
+                                if (item.permalink)
+                                    a(href=item.permalink)
                                         p(class=item.label.toLowerCase().replace(/\W/g, ''))!=item.value
                                 else
                                     p(class=item.label.toLowerCase().replace(/\W/g, ''))!=item.value
