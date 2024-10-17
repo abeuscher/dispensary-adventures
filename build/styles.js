@@ -5,6 +5,7 @@ const path = require("path");
 function BuildStyles(eleventyConfig, isWatchMode = false) {
   if (isWatchMode) {
     // Watch the styles directory for changes
+    console.log("Watching for style changes...");
     eleventyConfig.addWatchTarget("./src/styles/**/*.scss");
   }
 

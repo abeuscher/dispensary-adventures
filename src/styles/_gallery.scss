@@ -4,17 +4,30 @@
     height: auto;
   }
   padding-bottom: $gutter-width;
-}
-.swiper-pagination {
-  position: relative;
-  .swiper-pagination-bullet {
-    cursor: pointer;
-    background: $white;
-    opacity: 0.5;
-    width: 12px;
-    height: 12px;
-    &.swiper-pagination-bullet-active {
+  .swiper-button-next,
+  .swiper-button-prev {
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+    color: $green;
+  }
+  &:hover {
+    .swiper-button-next,
+    .swiper-button-prev {
       opacity: 1;
+    }
+  }
+  .swiper-pagination {
+    position: relative;
+    margin-top: $gutter-width;
+    .swiper-pagination-bullet {
+      cursor: pointer;
+      background: $white;
+      opacity: 0.5;
+      width: 12px;
+      height: 12px;
+      &.swiper-pagination-bullet-active {
+        background: $bright-green;
+      }
     }
   }
 }

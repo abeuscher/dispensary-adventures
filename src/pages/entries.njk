@@ -11,12 +11,12 @@ eleventyComputed:
   description: "{{ reviewPost.seo.fields.description }}"
   metaImage: "{{ reviewPost.seo.fields.featured_image.fields.file.url }}"
   metaUrl: "{{ reviewPost.permalink }}"
+  pageType: "Review"
 ---
-{% from "../macros/pagination.njk" import nextprevious %}
+{% from "../macros/nextprevious.njk" import nextprevious %}
 {% from "../macros/gallery.njk" import gallery %}
 {% from "../macros/product-info-flower.njk" import productinfo %}
 {% from "../macros/scoring.njk" import scoring %}
-{% from "../macros/debugger.njk" import debugger %}
 
 <article role="article" itemprop="haspart" itemscope itemtype="http://schema.org/Article">
     <meta itemscope="itemscope" itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage">

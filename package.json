@@ -1,7 +1,7 @@
 {
   "name": "dispensary-adventures",
   "version": "1.0.0",
-  "description": "Static site built with 11ty, Swiper, Lodash, Sass, Contentful integration, and Prettier. For dispensaryadventures.com/",
+  "description": "Static site built with 11ty, Swiper, Sass, and Contentful  for dispensaryadventures.com",
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
@@ -15,9 +15,6 @@
     "contentful": "^11.1.4",
     "dotenv": "^16.0.3",
     "esbuild": "^0.24.0",
-    "loader-utils": "^3.3.1",
-    "lodash": "^4.17.21",
-    "lodash.assign": "^4.2.0",
     "nunjucks-date": "^1.5.0",
     "pug": "^3.0.3"
   },
@@ -28,16 +25,10 @@
     "@types/node": "^22.7.5",
     "autoprefixer": "^10.0.0",
     "babel-loader": "^9.2.1",
-    "css-loader": "^7.1.2",
     "esbuild-plugin-alias": "^0.2.1",
-    "postcss": "^8.0.0",
     "prettier": "^3.0.0",
     "sass": "^1.79.5",
-    "sass-loader": "^16.0.2",
-    "style-loader": "^4.0.0",
-    "swiper": "^11.1.14",
-    "ts-node": "^10.0.0",
-    "typescript": "^5.0.0"
+    "swiper": "^11.1.14"
   },
   "browserslist": [
     "defaults"

@@ -44,6 +44,24 @@ const addFilters = (eleventyConfig) => {
     }
     return value;
   });
+  eleventyConfig.addFilter("getPrevNext", function (data, current) {
+    let previousEntry = null;
+    let nextEntry = null;
+
+    data.forEach((item, index) => {
+      if (item.slug === current.slug) {
+        // Check if the index is within bounds before setting previous or next entries
+        if (index > 0) {
+          nextEntry = data[index - 1];
+        }
+        if (index < data.length - 1) {
+          previousEntry = data[index + 1];
+        }
+      }
+    });
+
+    return { previousEntry, nextEntry };
+  });
 };
 
 module.exports = { addFilters };

@@ -15,7 +15,7 @@
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
-                "@type": "Review",
+                "@type": "{{ pageType | default('WebPage') }}",
                 "name": "{{ title }}",
                 "datePublished": "{{ reviewPost.date | date('yyyy-MM-DD') }}",
                 "description": "{{ description }}",

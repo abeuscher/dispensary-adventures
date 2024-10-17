@@ -12,6 +12,7 @@ module.exports = function (eleventyConfig) {
   getFields(eleventyConfig);
 
   eleventyConfig.addPassthroughCopy({ "src/public": "./" });
+  console.log("WATCH_MODE", process.env.WATCH_MODE);
   BuildStyles(eleventyConfig, process.env.WATCH_MODE === "true");
   BuildScripts(eleventyConfig, process.env.WATCH_MODE === "true");
 

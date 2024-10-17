@@ -48,10 +48,6 @@ li {
 .centered {
   text-align: center;
 }
-.cartoon {
-  font-family: $nav-font;
-  font-weight: normal;
-}
 
 .padded {
   padding: calc($gutter-width/2) $gutter-width;
@@ -184,27 +180,6 @@ li {
 .bg-black {
   background: $black;
   color: $white;
-}
-.lens {
-  opacity: 0;
-  position: absolute;
-  border: 2px solid grey;
-  border-radius: 50%;
-  overflow: hidden;
-
-  box-shadow: inset 0 0 10px 2px grey;
-  filter: drop-shadow(0 0 2px grey);
-
-  .slide-image {
-    bottom: auto;
-  }
-  &.active {
-    opacity: 1;
-    cursor: none;
-    & > * {
-      cursor: none;
-    }
-  }
 }
 
 .sort-table-arrows {

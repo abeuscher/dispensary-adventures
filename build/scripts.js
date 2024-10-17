@@ -1,17 +1,16 @@
-const fs = require("fs");
 const esbuild = require("esbuild");
+const fs = require("fs");
 const path = require("path");
 const pugFunctionPlugin = require("./pug-function.js");
 
-const BuildScripts = (eleventyConfig, isWatchMode = false) => {
+const BuildScripts = async (eleventyConfig, isWatchMode = false) => {
   const outputDir = path.join(__dirname, "../dist/scripts");
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
-  // Shared esbuild configuration
   const esbuildConfig = {
-    entryPoints: ["./src/scripts/app.js"],
+    entryPoints: ["./src/scripts/app.js"], // Only build app.js
     bundle: true,
     outdir: outputDir,
     loader: {
@@ -23,29 +22,21 @@ const BuildScripts = (eleventyConfig, isWatchMode = false) => {
     sourcemap: true,
   };
 
-  esbuild
-    .build(esbuildConfig)
-    .then(() => {
+  try {
+    if (isWatchMode) {
+      eleventyConfig.addWatchTarget("./src/scripts/**/*.js"); // Watch all JS files for changes
+      eleventyConfig.on("beforeBuild", async () => {
+        await esbuild.build(esbuildConfig); // Only build app.js on any change
+        console.log("Rebuilding app.js due to script changes...");
+      });
+    } else {
+      await esbuild.build(esbuildConfig); // Initial build
       console.log("Script Build successful!");
-
-      // Only watch for changes in development mode
-      if (isWatchMode) {
-        console.log("Watching for changes...");
-        esbuild
-          .context(esbuildConfig)
-          .then((context) => {
-            context.watch();
-            console.log("Watching for changes...");
-          })
-          .catch((error) => {
-            console.error("Error watching files:", error);
-          });
-      }
-    })
-    .catch((error) => {
-      console.error("Build failed:", error);
-      process.exit(1);
-    });
+    }
+  } catch (error) {
+    console.error("Build failed:", error);
+    process.exit(1);
+  }
 };
 
 module.exports = { BuildScripts };

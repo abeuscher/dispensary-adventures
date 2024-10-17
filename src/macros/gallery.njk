@@ -5,19 +5,17 @@
                 <div class="swiper-wrapper">
                     {% for photo in photos %}
                         <div class="swiper-slide">
-                            <div class="inner">
-                                <img src="{{ photo.fields.file.url }}" alt=""/>
-                                {% if photo.caption %}
-                                    <div class="caption">{{ photo.caption }}</div>
-                                {% endif %}
-                            </div>
+                            <img src="{{ photo.fields.file.url }}" alt=""/>
+                            {% if photo.caption %}
+                                <div class="caption">{{ photo.caption }}</div>
+                            {% endif %}
                         </div>
                     {% endfor %}
                 </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
     </section>
 {%- endmacro -%}
