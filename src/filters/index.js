@@ -1,3 +1,4 @@
+const nunjucks = require("nunjucks");
 const dateFilter = require("nunjucks-date");
 const markdownIt = require("markdown-it");
 const markdownLib = markdownIt({
@@ -28,17 +29,13 @@ const addFilters = (eleventyConfig) => {
     }
     return value;
   });
-  eleventyConfig.addFilter("cleanJSONLD", function (value) {
+  eleventyConfig.addFilter("cleanJSONLD", function (value, spaces = 0) {
     if (!value) return value;
-
-    // Replace HTML entities with their intended characters
-    return value
-      .replace(/&amp;#39;/g, "'") // Replace HTML entity for single quote
-      .replace(/&amp;#x2d;/g, "-") // Replace HTML entity for dash
-      .replace(/&amp;/g, "&") // Replace HTML entity for ampersand
-      .replace(/&quot;/g, '"') // Replace HTML entity for double quotes
-      .replace(/&lt;/g, "<") // Replace HTML entity for less than
-      .replace(/&gt;/g, ">"); // Replace HTML entity for greater than
+    if (value instanceof nunjucks.runtime.SafeString) {
+      value = value.toString();
+    }
+    const jsonString = JSON.stringify(value, null, spaces).replace(/</g, "\\u003c");
+    return nunjucks.runtime.markSafe(jsonString);
   });
   eleventyConfig.addFilter("markdownify", (content) => {
     return markdownLib.render(content || ""); // Convert Markdown to HTML

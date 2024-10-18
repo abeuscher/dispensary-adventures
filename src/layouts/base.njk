@@ -12,22 +12,6 @@
         <script src="/scripts/app.js" defer></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Luckiest+Guy&display=swap">
         <link rel="stylesheet" href="/styles/theme.css">
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "{{ pageType | default('WebPage') }}",
-                "name": "{{ title | cleanJSONLD }}",
-                "datePublished": "{{ reviewPost.date | date('yyyy-MM-DD') }}",
-                "description": "{{ description | cleanJSONLD }}",
-                "url": "{{ metaUrl | cleanJSONLD }}",
-                "image": "{{ metaImage | cleanJSONLD }}"{% if reviewPost.long_review %},
-                    "reviewBody": "{{ reviewPost.long_review | cleanLineBreaks | cleanJSONLD }}"{% endif %},
-                "author": {
-                    "@type": "Person",
-                    "name": "Alex Beuscher"
-                }
-            }
-        </script>
     </head>
     <body>
         {% include "header.njk" %}
