@@ -31,27 +31,7 @@ const addFilters = (eleventyConfig) => {
   eleventyConfig.addFilter("markdownify", (content) => {
     return markdownLib.render(content || ""); // Convert Markdown to HTML
   });
-  eleventyConfig.addFilter("date", dateFilter);
-  eleventyConfig.addFilter("cleanLineBreaks", (str) => {
-    return str.replace(/(\r\n|\n|\r)/gm, "");
-  });
-  eleventyConfig.addFilter("prettyjson", (data) => {
-    return JSON.stringify(data, undefined, 2);
-  });
-  eleventyConfig.addFilter("stringify", (data) => {
-    return JSON.stringify(data);
-  });
-  eleventyConfig.addFilter("cleanSlug", function (value) {
-    if (typeof value === "string") {
-      return value
-        .replace(/&#39;/g, "")
-        .replace(/[^\w\s-]/g, "")
-        .trim()
-        .replace(/\s+/g, "-")
-        .toLowerCase();
-    }
-    return value;
-  });
+
   eleventyConfig.addFilter("getPrevNext", function (data, current) {
     let previousEntry = null;
     let nextEntry = null;
