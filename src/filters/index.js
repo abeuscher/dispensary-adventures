@@ -34,6 +34,7 @@ const addFilters = (eleventyConfig) => {
     // Replace HTML entities with their intended characters
     return value
       .replace(/&amp;#39;/g, "'") // Replace HTML entity for single quote
+      .replace(/&amp;#x2d;/g, "-") // Replace HTML entity for dash
       .replace(/&amp;/g, "&") // Replace HTML entity for ampersand
       .replace(/&quot;/g, '"') // Replace HTML entity for double quotes
       .replace(/&lt;/g, "<") // Replace HTML entity for less than
