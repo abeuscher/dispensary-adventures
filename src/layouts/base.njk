@@ -19,9 +19,9 @@
                 "name": "{{ title | cleanJSONLD }}",
                 "datePublished": "{{ reviewPost.date | date('yyyy-MM-DD') }}",
                 "description": "{{ description | cleanJSONLD }}",
-                "url": "{{ metaUrl }}",
-                "image": "{{ metaImage }}",{% if reviewPost.long_review %}
-                    "reviewBody": "{{ reviewPost.long_review | cleanLineBreaks | cleanJSONLD | safe }}",{% endif %}
+                "url": "{{ metaUrl | cleanJSONLD }}",
+                "image": "{{ metaImage | cleanJSONLD }}"{% if reviewPost.long_review %},
+                    "reviewBody": "{{ reviewPost.long_review | cleanLineBreaks | cleanJSONLD }}"{% endif %},
                 "author": {
                     "@type": "Person",
                     "name": "Alex Beuscher"
