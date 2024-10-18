@@ -28,6 +28,17 @@ const addFilters = (eleventyConfig) => {
     }
     return value;
   });
+  eleventyConfig.addFilter("cleanJSONLD", function (value) {
+    if (!value) return value;
+
+    // Replace HTML entities with their intended characters
+    return value
+      .replace(/&amp;#39;/g, "'") // Replace HTML entity for single quote
+      .replace(/&amp;/g, "&") // Replace HTML entity for ampersand
+      .replace(/&quot;/g, '"') // Replace HTML entity for double quotes
+      .replace(/&lt;/g, "<") // Replace HTML entity for less than
+      .replace(/&gt;/g, ">"); // Replace HTML entity for greater than
+  });
   eleventyConfig.addFilter("markdownify", (content) => {
     return markdownLib.render(content || ""); // Convert Markdown to HTML
   });

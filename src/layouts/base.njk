@@ -16,12 +16,12 @@
             {
                 "@context": "https://schema.org",
                 "@type": "{{ pageType | default('WebPage') }}",
-                "name": "{{ title }}",
+                "name": "{{ title | cleanJSONLD }}",
                 "datePublished": "{{ reviewPost.date | date('yyyy-MM-DD') }}",
-                "description": "{{ description }}",
+                "description": "{{ description | cleanJSONLD }}",
                 "url": "{{ metaUrl }}",
                 "image": "{{ metaImage }}",{% if reviewPost.long_review %}
-                    "reviewBody": "{{ reviewPost.long_review | cleanLineBreaks | safe }}",{% endif %}
+                    "reviewBody": "{{ reviewPost.long_review | cleanLineBreaks | cleanJSONLD | safe }}",{% endif %}
                 "author": {
                     "@type": "Person",
                     "name": "Alex Beuscher"
