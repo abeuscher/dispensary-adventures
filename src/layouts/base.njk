@@ -33,6 +33,7 @@
                         "category": {{ productType | cleanJSONLD }},
                         "aggregateRating": {
                             "@type": "AggregateRating",
+                            "reviewCount": "1",
                             "ratingValue": "{{ score | divideScore }}",
                             "bestRating": "10",
                             "worstRating": "1"
