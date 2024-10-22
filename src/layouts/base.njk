@@ -31,6 +31,12 @@
                         "@type": "Product",
                         "name": {{ strain | cleanJSONLD }},
                         "category": {{ productType | cleanJSONLD }}
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "{{ score | divideScore }}",
+                            "bestRating": "10",
+                            "worstRating": "1"
+                        }
                     },
                     "reviewRating": {
                         "@type": "Rating",
