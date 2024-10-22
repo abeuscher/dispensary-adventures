@@ -25,11 +25,11 @@
                 <div class="data-block">
                     <div class="data-point package-date">
                         <span class="label">Packaged</span>
-                        <span class="value">{{ product.package_date }}</span>
+                        <span class="value">{{ product.package_date | date('MM/DD/YYYY') }}</span>
                     </div>
                     <div class="data-point purchase-date">
                         <span class="label">Purchased</span>
-                        <span class="value">{{ product.purchase_date }} from {{ product.dispensary }}</span>
+                        <span class="value">{{ product.purchase_date | date('MM/DD/YYYY') }} from {{ product.dispensary }}</span>
                     </div>
                 </div>
             </div>
