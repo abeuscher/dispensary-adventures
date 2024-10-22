@@ -31,12 +31,32 @@ const addFilters = (eleventyConfig) => {
   });
   eleventyConfig.addFilter("cleanJSONLD", function (value, spaces = 0) {
     if (!value) return value;
+
+    // Convert SafeString instances to regular strings
     if (value instanceof nunjucks.runtime.SafeString) {
       value = value.toString();
     }
+
+    // Handle strings and escape special JSON characters
+    if (typeof value === "string") {
+      // Escaping problematic characters
+      value = value
+        .replace(/\\/g, "\\\\") // Escape backslashes
+        .replace(/"/g, '\\"') // Escape double quotes
+        .replace(/\n/g, "\\n") // Escape newlines
+        .replace(/\r/g, "\\r"); // Escape carriage returns
+    }
+
+    // Convert to JSON string and ensure '<' characters are safe
     const jsonString = JSON.stringify(value, null, spaces).replace(/</g, "\\u003c");
+
+    // Return the sanitized and marked safe string
     return nunjucks.runtime.markSafe(jsonString);
   });
+  eleventyConfig.addFilter("divideScore", function (score) {
+    return (score / 3).toFixed(0);
+  });
+
   eleventyConfig.addFilter("markdownify", (content) => {
     return markdownLib.render(content || ""); // Convert Markdown to HTML
   });

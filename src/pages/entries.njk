@@ -9,8 +9,9 @@ eleventyComputed:
   reviewPosts: "{{ reviewPost }}"
   title: "{{ reviewPost.title }}"
   description: "{{ reviewPost.seo.fields.description }}"
-  metaImage: "{{ reviewPost.seo.fields.featured_image.fields.file.url }}"
-  metaUrl: "{{ reviewPost.permalink }}"
+  metaImage: "http:{{ reviewPost.seo.fields.featured_image.fields.file.url }}"
+  metaUrl: "https://dispensaryadventures.com{{ reviewPost.permalink }}"
+  score: "{{ reviewPost.scores.fields.overall_score }}"
   pageType: "Review"
 ---
 {% from "../macros/nextprevious.njk" import nextprevious %}
