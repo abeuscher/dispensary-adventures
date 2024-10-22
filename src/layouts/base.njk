@@ -30,7 +30,7 @@
                     "itemReviewed": {
                         "@type": "Product",
                         "name": {{ strain | cleanJSONLD }},
-                        "category": {{ productType | cleanJSONLD }}
+                        "category": {{ productType | cleanJSONLD }},
                         "aggregateRating": "{{ score | divideScore }}"
                     },
                     "reviewRating": {
