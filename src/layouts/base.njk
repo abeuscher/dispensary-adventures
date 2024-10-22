@@ -29,7 +29,8 @@
                     },
                     "itemReviewed": {
                         "@type": "Product",
-                        "name": "{{ productType }}"
+                        "name": {{ strain | cleanJSONLD }},
+                        "category": {{ productType | cleanJSONLD }}
                     },
                     "reviewRating": {
                         "@type": "Rating",
