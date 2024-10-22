@@ -12,6 +12,7 @@ eleventyComputed:
   metaImage: "http:{{ reviewPost.seo.fields.featured_image.fields.file.url }}"
   metaUrl: "https://dispensaryadventures.com{{ reviewPost.permalink }}"
   score: "{{ reviewPost.scores.fields.overall_score }}"
+  productType: "Cannabis Flower"
   pageType: "Review"
 ---
 {% from "../macros/nextprevious.njk" import nextprevious %}
