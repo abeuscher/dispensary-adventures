@@ -1,0 +1,4 @@
+Sitemap: https://dispensaryadventures.com/sitemap.xml
+
+User-agent: *
+Disallow:

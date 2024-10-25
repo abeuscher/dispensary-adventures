@@ -1,0 +1,29 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://dispensaryadventures.com/</loc>
+        <changefreq>daily</changefreq>
+        <lastmod>{{ date | date('YYYY-MM-DD') }}</lastmod>
+    </url>
+    <url>
+        <loc>https://dispensaryadventures.com/list/</loc>
+        <changefreq>weekly</changefreq>
+        <lastmod>{{ date | date('YYYY-MM-DD') }}</lastmod>
+    </url>
+    <url>
+        <loc>https://dispensaryadventures.com/about/</loc>
+        <changefreq>yearly</changefreq>
+        <lastmod>{{ date | date('YYYY-MM-DD') }}</lastmod>
+    </url>
+    {% for post in collections.reviewPost %}
+        <url>
+            <loc>https://dispensaryadventures.com{{ post.permalink | url }}</loc>
+            <changefreq>monthly</changefreq>
+            <lastmod>{{ post.date | date('YYYY-MM-DD') }}</lastmod>
+        </url>
+    {% endfor %}
+</urlset>
