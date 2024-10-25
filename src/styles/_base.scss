@@ -294,6 +294,10 @@ li {
   }
   .table-body-cell {
     font-size: 12px;
+    p.purchdate,
+    p.packdate {
+      font-size: 10px;
+    }
   }
   .table-body-row {
     transition: all 0.25s ease-in;

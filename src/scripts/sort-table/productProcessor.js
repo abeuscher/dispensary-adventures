@@ -1,3 +1,18 @@
+const formatDateToMMDDYYYY = (dateInput) => {
+  if (!dateInput) return "";
+
+  const formatter = new Intl.DateTimeFormat("en-US", {
+    month: "2-digit",
+    day: "2-digit",
+    year: "numeric",
+  });
+
+  try {
+    return formatter.format(new Date(dateInput));
+  } catch (error) {
+    return "";
+  }
+};
 function productProcessor(products) {
   return JSON.parse(products).map((p) => [
     {
@@ -42,13 +57,13 @@ function productProcessor(products) {
     {
       label: "Pack. Date",
       type: "date",
-      value: p.product_info.fields.package_date,
+      value: formatDateToMMDDYYYY(p.product_info.fields.package_date),
       mobile: false,
     },
     {
       label: "Purch. Date",
       type: "date",
-      value: p.product_info.fields.purchase_date,
+      value: formatDateToMMDDYYYY(p.product_info.fields.purchase_date),
       mobile: false,
       default: true,
     },
