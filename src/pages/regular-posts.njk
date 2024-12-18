@@ -1,0 +1,33 @@
+---
+layout: base.njk
+pagination:
+  data: collections.regularPost
+  size: 1
+  alias: regularPost
+permalink: "{{ regularPost.permalink }}"
+eleventyComputed:
+  reviewPosts: "{{ regularPost }}"
+  title: "{{ regularPost.title }}"
+  description: "{{ regularPost.seo.fields.description }}"
+  metaImage: "http:{{ regularPost.seo.fields.featured_image.fields.file.url }}"
+  metaUrl: "https://dispensaryadventures.com{{ regularPost.permalink }}"
+  pageType: "Blog Post"
+---
+<article role="article" itemprop="haspart" itemscope itemtype="http://schema.org/Article">
+    <meta itemscope="itemscope" itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage">
+    <section class="article-header-block">
+        <div class="category-header">
+            <div class="content-wrapper">
+                <h2>Blog Post</h2>
+            </div>
+        </div>
+    </section>
+    {% if regularPost.photos %}
+        {{ gallery(regularPost.photos) }}
+    {% endif %}
+    <section class="article-main-block padding-both">
+        <div class="content-wrapper" itemprop="articleBody">
+            {{ regularPost.content | markdownify | safe }}
+        </div>
+    </section>
+</article>
