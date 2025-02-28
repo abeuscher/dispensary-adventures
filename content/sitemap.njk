@@ -1,0 +1,20 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {%- for page in collections.all %}
+        {% if not page.data.excludeFromSitemap %}
+            {% if page.url == "/" %}
+                <changefreq>daily</changefreq>
+            {% elif page.url == "/list/" %}
+                <changefreq>weekly</changefreq>
+            {% elif page.url == "/about/" %}
+                <changefreq>yearly</changefreq>
+            {% else %}
+                <changefreq>monthly</changefreq>
+            {% endif %}
+        {% endif %}
+    {%- endfor %}
+</urlset>

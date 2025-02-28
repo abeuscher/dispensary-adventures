@@ -1,0 +1,9 @@
+@use "_variables.scss" as *;
+@use "_sass-mixins.scss" as *;
+
+footer {
+  background: $black;
+  color: $pale-green;
+  padding: $gutter-width * 2 0;
+  border-top: 1px solid $bright-green;
+}

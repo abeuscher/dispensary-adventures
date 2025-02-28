@@ -1,34 +1,43 @@
 {
   "name": "dispensary-adventures",
   "version": "1.0.0",
+  "type": "module",
   "description": "Static site built with 11ty, Swiper, Sass, and Contentful  for dispensaryadventures.com",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy",
-    "watch": "eleventy --watch",
-    "clean": "rm -rf _site",
-    "format": "prettier --write ."
+    "start": "npx @11ty/eleventy --serve --quiet",
+    "build": "npx @11ty/eleventy",
+    "watch": "npx @11ty/eleventy --watch",
+    "clean": "rm -rf dist",
+    "format": "prettier --write .",
+    "export": "node exporter.js",
+    "tree": "find . -maxdepth 3 -type d \\( -name \"node_modules\" -o -name \"dist\" -o -name \".git\" \\) -prune -o -print"
   },
   "dependencies": {
-    "@contentful/rich-text-html-renderer": "^16.6.10",
-    "@contentful/rich-text-types": "^16.8.5",
-    "contentful": "^11.1.4",
     "dotenv": "^16.0.3",
     "esbuild": "^0.24.0",
+    "glob": "^11.0.1",
+    "gray-matter": "^4.0.3",
     "html-minifier": "^4.0.0",
+    "luxon": "^3.5.0",
     "markdown-it": "^14.1.0",
+    "normalize.css": "^8.0.1",
     "nunjucks": "^3.2.4",
     "nunjucks-date": "^1.5.0",
-    "pug": "^3.0.3"
+    "pug": "^3.0.3",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-img": "^6.0.1",
     "@babel/core": "^7.25.8",
     "@babel/preset-env": "^7.25.8",
     "@types/node": "^22.7.5",
     "autoprefixer": "^10.0.0",
+    "axios": "^1.8.1",
     "babel-loader": "^9.2.1",
+    "date-fns": "^4.1.0",
     "esbuild-plugin-alias": "^0.2.1",
+    "fs-extra": "^11.3.0",
     "prettier": "^3.0.0",
     "sass": "^1.79.5",
     "swiper": "^11.1.14"

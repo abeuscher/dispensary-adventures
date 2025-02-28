@@ -1,0 +1,200 @@
+@use "_variables.scss" as *;
+@use "_sass-mixins.scss" as *;
+
+.sort-table-arrows {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  i {
+    font-size: 0.5vw;
+    padding: 0 0 0 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    color: black;
+    &:active,
+    &:focus {
+      outline: none;
+    }
+    &.active {
+      color: $white;
+    }
+    @include bp(m) {
+      font-size: 6px;
+    }
+  }
+}
+.grid-table {
+  display: block;
+  .table-header,
+  .table-body {
+    display: block;
+  }
+  .table-row {
+    display: grid;
+    grid-template-columns: 24% 24% 17% 17% 18%;
+
+    @include bp(m) {
+      grid-template-columns: 12% 12% 12% 8% 8% 8% 8% 8% 6% 6% 6% 6%;
+    }
+  }
+}
+
+.sortable {
+  .table-controls {
+    .inner {
+      padding: 0 0 25px;
+      text-align: center;
+      font-size: 12px;
+      select {
+        outline: none;
+        &:active,
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  p {
+    margin: 0;
+  }
+  .table-cell {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    a {
+      color: $black;
+      &:hover {
+        color: $black;
+      }
+    }
+    &.alpha {
+      padding-left: 10px;
+      position: relative;
+      .sort-table-arrows {
+        position: absolute;
+        right: 10px;
+      }
+    }
+    p {
+      padding: 1em 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    &.number,
+    &.date {
+      flex-wrap: wrap;
+      .sort-table-arrows {
+        flex-basis: 100%;
+      }
+    }
+    &.number {
+      justify-content: flex-end;
+      text-align: right;
+    }
+    &.number.score,
+    &.date {
+      justify-content: center;
+    }
+    &.date {
+      font-size: 10px;
+    }
+    &.hide-mobile {
+      display: none;
+      @include bp(m) {
+        display: flex;
+      }
+    }
+  }
+  .table-body-cell {
+    font-size: 12px;
+    p.purchdate,
+    p.packdate {
+      font-size: 10px;
+    }
+  }
+  .table-body-row {
+    transition: all 0.25s ease-in;
+    &:nth-child(even) {
+      background: rgba(0, 0, 0, 0.1);
+    }
+    &:hover {
+      background: rgba(0, 0, 0, 0.2);
+    }
+  }
+  /* New styles for row links */
+  a.row-link {
+    text-decoration: none;
+    color: inherit;
+    display: grid;
+    cursor: pointer;
+    position: relative;
+
+    /* Ensure the hover state works with the link */
+    &:hover {
+      color: inherit;
+    }
+
+    /* Optional: subtle visual indication that it's clickable */
+    &::after {
+      content: "";
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+      width: 6px;
+      height: 6px;
+      border-top: 2px solid rgba(0, 0, 0, 0.3);
+      border-right: 2px solid rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+  .table-header {
+    color: $white;
+    p {
+      font-weight: normal;
+      font-size: 12px;
+      float: left;
+    }
+    .table-header-row.header-header {
+      display: none;
+      padding: 0;
+      margin: 0;
+      @include bp(m) {
+        display: grid;
+        grid-template-columns: 36% 40% 24%;
+      }
+      .table-cell {
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+        padding: calc($gutter-width/4) 0 0;
+        float: none;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+    .table-header-row {
+      background: $black;
+      .table-header-cell {
+        &.score-header {
+          background: $off-black;
+          text-align: center;
+          line-height: 0;
+        }
+        &.details-header {
+          background: $gray;
+        }
+      }
+    }
+  }
+}

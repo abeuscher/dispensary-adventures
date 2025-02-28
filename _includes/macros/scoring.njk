@@ -1,0 +1,44 @@
+{% macro scoring(scores, reviewSections) %}
+    <section class="product-scores-block bg-green-green padding-bottom">
+        <div class="content-wrapper">
+            <div class="product-scores">
+                <div class="data-score">
+                    <span class="label">Strength:</span>
+                    <span class="value">{{ scores.strength }}/10</span>
+                    {% if reviewSections.strength__notes %}
+                        <div class="score-content">
+                            <div class="notes">{{ reviewSections.strength__notes | safe }}</div>
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="data-score">
+                    <span class="label">Taste:</span>
+                    <span class="value">{{ scores.taste }}/10</span>
+                    {% if reviewSections.taste__notes %}
+                        <div class="score-content">
+                            <div class="notes">{{ reviewSections.taste__notes | safe }}</div>
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="data-score">
+                    <span class="label">Appearance:</span>
+                    <span class="value">{{ scores.quality }}/10</span>
+                    {% if reviewSections.quality__notes %}
+                        <div class="score-content">
+                            <div class="notes">{{ reviewSections.quality__notes | safe }}</div>
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="data-final">
+                    <span class="label">Overall Score:</span>
+                    <span class="value">{{ scores.strength + scores.taste + scores.quality }}/30</span>
+                    {% if reviewSections.overall__notes %}
+                        <div class="score-content">
+                            <div class="notes">{{ reviewSections.overall__notes | safe }}</div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endmacro %}

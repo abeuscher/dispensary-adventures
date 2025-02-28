@@ -1,0 +1,18 @@
+{% macro gallery(photos) %}
+    <section class="photos-block bg-black">
+        <div class="content-wrapper">
+            <div class="swiper" id="review-carousel">
+                <div class="swiper-wrapper">
+                    {% for photo in photos %}
+                        <div class="swiper-slide">
+                            <img src="{{ photo }}" alt="{{ title }}"/>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+{% endmacro %}
