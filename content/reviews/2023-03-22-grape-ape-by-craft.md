@@ -11,7 +11,7 @@ seo:
   description: >-
     A review of the Grape Ape cannabis strain from C.R.A.F.T. dispensary in San
     Francisco.
-  featured_image: /images/reviews/grape-ape-by-c.r.a.f.t./001.jpg
+  featured_image: /images/reviews/grape-ape-by-craft/001.jpg
 product_info:
   title: Product Info for Grape Ape by C.R.A.F.T.
   product_type: Flower / Bud
@@ -30,10 +30,10 @@ scores:
   quality: 8
   overall_score: 23
 photos:
-  - /images/reviews/grape-ape-by-c.r.a.f.t./001.jpg
-  - /images/reviews/grape-ape-by-c.r.a.f.t./002.jpg
-  - /images/reviews/grape-ape-by-c.r.a.f.t./003.jpg
-  - /images/reviews/grape-ape-by-c.r.a.f.t./004.jpg
+  - /images/reviews/grape-ape-by-craft/001.jpg
+  - /images/reviews/grape-ape-by-craft/002.jpg
+  - /images/reviews/grape-ape-by-craft/003.jpg
+  - /images/reviews/grape-ape-by-craft/004.jpg
 ---
 
 Okay so I am really just reviewing a free gram. So that explains the pictures. I listed the price out so that this would not immediately jump to the top of [the stats](/list/) for low price and high thc because that would be weird. But anyways – I only have a little bit of this grass because it came free with the signup of a new customer. Like they do at the places where they sell the weed.

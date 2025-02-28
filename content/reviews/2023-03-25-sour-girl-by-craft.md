@@ -13,7 +13,7 @@ seo:
   description: >-
     A review of the Sour Girl cannabis strain. Purchased from the C.R.A.F.T.
     dispensary in San Francisco
-  featured_image: /images/reviews/sour-girl-by-c.r.a.f.t./005.jpg
+  featured_image: /images/reviews/sour-girl-by-craft/005.jpg
 product_info:
   title: Product Info for Sour Girl by C.R.A.F.T.
   product_type: Flower / Bud
@@ -32,13 +32,13 @@ scores:
   quality: 9
   overall_score: 27
 photos:
-  - /images/reviews/sour-girl-by-c.r.a.f.t./001.jpg
-  - /images/reviews/sour-girl-by-c.r.a.f.t./002.jpg
-  - /images/reviews/sour-girl-by-c.r.a.f.t./003.jpg
-  - /images/reviews/sour-girl-by-c.r.a.f.t./004.jpg
-  - /images/reviews/sour-girl-by-c.r.a.f.t./005.jpg
-  - /images/reviews/sour-girl-by-c.r.a.f.t./006.jpg
-  - /images/reviews/sour-girl-by-c.r.a.f.t./007.jpg
+  - /images/reviews/sour-girl-by-craft/001.jpg
+  - /images/reviews/sour-girl-by-craft/002.jpg
+  - /images/reviews/sour-girl-by-craft/003.jpg
+  - /images/reviews/sour-girl-by-craft/004.jpg
+  - /images/reviews/sour-girl-by-craft/005.jpg
+  - /images/reviews/sour-girl-by-craft/006.jpg
+  - /images/reviews/sour-girl-by-craft/007.jpg
 ---
 
 I have pretty much fuckin' loved every strain I have ordered from this place and this one is no exception. Wide-ass terpene profile makes this a really interesting high. It's definitely leaning sativa / energetic, but also there's just a lot of complexity to the mental effects. It's definitely on the daytime spectrum of weed, which is my favorite kind. This is an excellent candidate for a wake and bake or like a day at the park.

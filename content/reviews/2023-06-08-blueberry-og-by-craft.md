@@ -11,7 +11,7 @@ seo:
   description: >-
     A review of the Blueberry OG cannabis strain from the C.R.A.F.T. dispensary
     in San Francisco, CA
-  featured_image: /images/reviews/blueberry-og-by-c.r.a.f.t./005.jpg
+  featured_image: /images/reviews/blueberry-og-by-craft/005.jpg
 product_info:
   title: Product Info for Blueberry OG by C.R.A.F.T.
   product_type: Flower / Bud
@@ -30,15 +30,15 @@ scores:
   quality: 8
   overall_score: 23
 photos:
-  - /images/reviews/blueberry-og-by-c.r.a.f.t./001.jpg
-  - /images/reviews/blueberry-og-by-c.r.a.f.t./002.jpg
-  - /images/reviews/blueberry-og-by-c.r.a.f.t./003.jpg
-  - /images/reviews/blueberry-og-by-c.r.a.f.t./004.jpg
-  - /images/reviews/blueberry-og-by-c.r.a.f.t./005.jpg
-  - /images/reviews/blueberry-og-by-c.r.a.f.t./006.jpg
-  - /images/reviews/blueberry-og-by-c.r.a.f.t./007.jpg
-  - /images/reviews/blueberry-og-by-c.r.a.f.t./008.jpg
-  - /images/reviews/blueberry-og-by-c.r.a.f.t./009.jpg
+  - /images/reviews/blueberry-og-by-craft/001.jpg
+  - /images/reviews/blueberry-og-by-craft/002.jpg
+  - /images/reviews/blueberry-og-by-craft/003.jpg
+  - /images/reviews/blueberry-og-by-craft/004.jpg
+  - /images/reviews/blueberry-og-by-craft/005.jpg
+  - /images/reviews/blueberry-og-by-craft/006.jpg
+  - /images/reviews/blueberry-og-by-craft/007.jpg
+  - /images/reviews/blueberry-og-by-craft/008.jpg
+  - /images/reviews/blueberry-og-by-craft/009.jpg
 ---
 
 Now I'm not totally disappointed with this grass, but in the context of the other strains I have purchased at C.R.A.F.T.,this is not the best one. The bud is a bit crumbly and it's not a particularly nuanced high. It smoked a bit harsh, and it's just not, like, as amazing as other offerings from these guys. I'm not sure if it cured wrong or what, but I am going to bet something was just a little off in this batch.

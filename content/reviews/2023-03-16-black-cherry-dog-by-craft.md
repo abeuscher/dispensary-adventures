@@ -11,7 +11,7 @@ seo:
   description: >-
     A review of the Black Cherry Dog cannabis strain from C.R.A.F.T. Dispensary
     in San Francisco
-  featured_image: /images/reviews/black-cherry-dog-by-c.r.a.f.t./005.jpg
+  featured_image: /images/reviews/black-cherry-dog-by-craft/005.jpg
 product_info:
   title: Product Info for Black Cherry Dog by C.R.A.F.T.
   product_type: Flower / Bud
@@ -30,16 +30,16 @@ scores:
   quality: 9
   overall_score: 24
 photos:
-  - /images/reviews/black-cherry-dog-by-c.r.a.f.t./001.jpg
-  - /images/reviews/black-cherry-dog-by-c.r.a.f.t./002.jpg
-  - /images/reviews/black-cherry-dog-by-c.r.a.f.t./003.jpg
-  - /images/reviews/black-cherry-dog-by-c.r.a.f.t./004.jpg
-  - /images/reviews/black-cherry-dog-by-c.r.a.f.t./005.jpg
-  - /images/reviews/black-cherry-dog-by-c.r.a.f.t./006.jpg
-  - /images/reviews/black-cherry-dog-by-c.r.a.f.t./007.jpg
-  - /images/reviews/black-cherry-dog-by-c.r.a.f.t./008.jpg
-  - /images/reviews/black-cherry-dog-by-c.r.a.f.t./009.jpg
-  - /images/reviews/black-cherry-dog-by-c.r.a.f.t./010.jpg
+  - /images/reviews/black-cherry-dog-by-craft/001.jpg
+  - /images/reviews/black-cherry-dog-by-craft/002.jpg
+  - /images/reviews/black-cherry-dog-by-craft/003.jpg
+  - /images/reviews/black-cherry-dog-by-craft/004.jpg
+  - /images/reviews/black-cherry-dog-by-craft/005.jpg
+  - /images/reviews/black-cherry-dog-by-craft/006.jpg
+  - /images/reviews/black-cherry-dog-by-craft/007.jpg
+  - /images/reviews/black-cherry-dog-by-craft/008.jpg
+  - /images/reviews/black-cherry-dog-by-craft/009.jpg
+  - /images/reviews/black-cherry-dog-by-craft/010.jpg
 ---
 
 Second offering from Craft is only very slightly less impressive than he first. While Dimepiece stood out amongst all weed, this BCD is a little more Center of Top Shelf; there is nothing at all wrong with anything it's just not bud that you would run over to your friend and insist they smoke immediately. If you know what I mean. Like – Jim Belushi is, by any measure, a very successful and competent comedic actor. The only time he seems a little pale is when you compare him to his big brother. I have heard that he grows pretty good weed, by the way.

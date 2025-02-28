@@ -11,7 +11,7 @@ seo:
   description: >-
     A review of the Hindu Kush strain from Up North. This sample was purchased
     at Harborside dispensary in Oakland, CA
-  featured_image: /images/reviews/upnorth's-hindu-kush/005.jpg
+  featured_image: /images/reviews/upnorths-hindu-kush/005.jpg
 product_info:
   title: Product Info for UpNorth's Hindu Kush
   product_type: Flower / Bud
@@ -30,16 +30,16 @@ scores:
   quality: 8
   overall_score: 25
 photos:
-  - /images/reviews/upnorth's-hindu-kush/001.jpg
-  - /images/reviews/upnorth's-hindu-kush/002.jpg
-  - /images/reviews/upnorth's-hindu-kush/003.jpg
-  - /images/reviews/upnorth's-hindu-kush/004.jpg
-  - /images/reviews/upnorth's-hindu-kush/005.jpg
-  - /images/reviews/upnorth's-hindu-kush/006.jpg
-  - /images/reviews/upnorth's-hindu-kush/007.jpg
-  - /images/reviews/upnorth's-hindu-kush/008.jpg
-  - /images/reviews/upnorth's-hindu-kush/009.jpg
-  - /images/reviews/upnorth's-hindu-kush/010.jpg
+  - /images/reviews/upnorths-hindu-kush/001.jpg
+  - /images/reviews/upnorths-hindu-kush/002.jpg
+  - /images/reviews/upnorths-hindu-kush/003.jpg
+  - /images/reviews/upnorths-hindu-kush/004.jpg
+  - /images/reviews/upnorths-hindu-kush/005.jpg
+  - /images/reviews/upnorths-hindu-kush/006.jpg
+  - /images/reviews/upnorths-hindu-kush/007.jpg
+  - /images/reviews/upnorths-hindu-kush/008.jpg
+  - /images/reviews/upnorths-hindu-kush/009.jpg
+  - /images/reviews/upnorths-hindu-kush/010.jpg
 ---
 
 I didn't mean to buy this bud. I had two other strains to review today and I was just trying to buy more of the GMO offering from Up North which I reviewed last week. Unfortunately it seems others also felt that was like special show stopping bud and so there was no more of it to be had.

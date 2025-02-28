@@ -11,7 +11,7 @@ seo:
   description: >-
     Like the Hand of Buddha himself, this bud will slap you into Satori. You can
     think and you can wait. But can you fast?
-  featured_image: /images/reviews/buddha's-hand-by-esensia/005.jpg
+  featured_image: /images/reviews/buddhas-hand-by-esensia/005.jpg
 product_info:
   title: Product Info for Buddha's Hand by Esensia
   product_type: Flower / Bud
@@ -30,13 +30,13 @@ scores:
   quality: 7
   overall_score: 23
 photos:
-  - /images/reviews/buddha's-hand-by-esensia/001.jpg
-  - /images/reviews/buddha's-hand-by-esensia/002.jpg
-  - /images/reviews/buddha's-hand-by-esensia/003.jpg
-  - /images/reviews/buddha's-hand-by-esensia/004.jpg
-  - /images/reviews/buddha's-hand-by-esensia/005.jpg
-  - /images/reviews/buddha's-hand-by-esensia/006.jpg
-  - /images/reviews/buddha's-hand-by-esensia/007.jpg
+  - /images/reviews/buddhas-hand-by-esensia/001.jpg
+  - /images/reviews/buddhas-hand-by-esensia/002.jpg
+  - /images/reviews/buddhas-hand-by-esensia/003.jpg
+  - /images/reviews/buddhas-hand-by-esensia/004.jpg
+  - /images/reviews/buddhas-hand-by-esensia/005.jpg
+  - /images/reviews/buddhas-hand-by-esensia/006.jpg
+  - /images/reviews/buddhas-hand-by-esensia/007.jpg
 ---
 
 I feel like this bud is really interfering with my cognitive processing. Could be that it's a bit of a wake and bake – I've only been up for a couple of hours. But the initial hit just produced fog and confusion. This bud smokes a bit harsh. I am wondering if it is slightly overcured or if that is an aspect of the strain.

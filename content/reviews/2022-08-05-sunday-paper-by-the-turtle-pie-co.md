@@ -13,7 +13,7 @@ seo:
   description: >-
     A review of the Sunday Paper cannabis strain from the Turtle Pie Co.
     Purchased in Oakland at Harborside dispensary.
-  featured_image: /images/reviews/sunday-paper-by-the-turtle-pie-co./005.jpg
+  featured_image: /images/reviews/sunday-paper-by-the-turtle-pie-co/005.jpg
 product_info:
   title: Product Info for Sunday Paper by The Turtle Pie Co.
   product_type: Flower / Bud
@@ -32,15 +32,15 @@ scores:
   quality: 10
   overall_score: 30
 photos:
-  - /images/reviews/sunday-paper-by-the-turtle-pie-co./001.jpg
-  - /images/reviews/sunday-paper-by-the-turtle-pie-co./002.jpg
-  - /images/reviews/sunday-paper-by-the-turtle-pie-co./003.jpg
-  - /images/reviews/sunday-paper-by-the-turtle-pie-co./004.jpg
-  - /images/reviews/sunday-paper-by-the-turtle-pie-co./005.jpg
-  - /images/reviews/sunday-paper-by-the-turtle-pie-co./006.jpg
-  - /images/reviews/sunday-paper-by-the-turtle-pie-co./007.jpg
-  - /images/reviews/sunday-paper-by-the-turtle-pie-co./008.jpg
-  - /images/reviews/sunday-paper-by-the-turtle-pie-co./009.jpg
+  - /images/reviews/sunday-paper-by-the-turtle-pie-co/001.jpg
+  - /images/reviews/sunday-paper-by-the-turtle-pie-co/002.jpg
+  - /images/reviews/sunday-paper-by-the-turtle-pie-co/003.jpg
+  - /images/reviews/sunday-paper-by-the-turtle-pie-co/004.jpg
+  - /images/reviews/sunday-paper-by-the-turtle-pie-co/005.jpg
+  - /images/reviews/sunday-paper-by-the-turtle-pie-co/006.jpg
+  - /images/reviews/sunday-paper-by-the-turtle-pie-co/007.jpg
+  - /images/reviews/sunday-paper-by-the-turtle-pie-co/008.jpg
+  - /images/reviews/sunday-paper-by-the-turtle-pie-co/009.jpg
 ---
 
 True story? This is the best weed I have ever smoked. I'm pretty sure it won some award or something – there was a note I did not read carefully next to the shelf I pulled this off of. But seriously – don't let the terrible packaging with jpeg artifacts on the text throw you off – this is insanely good weed. Those numbers are low on the potency and cannabinoid profile if anything. This jar could be just a big label that says “fuck you, dave!” and it would still fly off the shelves.

@@ -13,7 +13,7 @@ seo:
   description: >-
     A review of Flash Farm's KEY brand cannabis strain Runaway Bride. Like the
     movie. Yes that movie. I know.
-  featured_image: /images/reviews/key's-runaway-bride/005.jpg
+  featured_image: /images/reviews/keys-runaway-bride/005.jpg
 product_info:
   title: Product Info for Key's Runaway Bride
   product_type: Flower / Bud
@@ -32,14 +32,14 @@ scores:
   quality: 6
   overall_score: 19
 photos:
-  - /images/reviews/key's-runaway-bride/001.jpg
-  - /images/reviews/key's-runaway-bride/002.jpg
-  - /images/reviews/key's-runaway-bride/003.jpg
-  - /images/reviews/key's-runaway-bride/004.jpg
-  - /images/reviews/key's-runaway-bride/005.jpg
-  - /images/reviews/key's-runaway-bride/006.jpg
-  - /images/reviews/key's-runaway-bride/007.jpg
-  - /images/reviews/key's-runaway-bride/008.jpg
+  - /images/reviews/keys-runaway-bride/001.jpg
+  - /images/reviews/keys-runaway-bride/002.jpg
+  - /images/reviews/keys-runaway-bride/003.jpg
+  - /images/reviews/keys-runaway-bride/004.jpg
+  - /images/reviews/keys-runaway-bride/005.jpg
+  - /images/reviews/keys-runaway-bride/006.jpg
+  - /images/reviews/keys-runaway-bride/007.jpg
+  - /images/reviews/keys-runaway-bride/008.jpg
 ---
 
 Okay so this was bud that I bought with some rewards points I had saved up. For the lower end strains at Harborside, they do not list the stats of the bud on the site. I suppose this is a deliberate choice and it seems to be that many dispensaries do the same. It's kind of pure obfuscation, really. If you want to buy based on something that is on the package you would think they would pass that info through to the consumer, amiright?

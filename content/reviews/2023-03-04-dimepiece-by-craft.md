@@ -11,7 +11,7 @@ seo:
   description: >-
     A review of the Dimepiece cannabis strain from CRAFT in San Francisco.
     Purchased via delivery.
-  featured_image: /images/reviews/dimepiece-by-c.r.a.f.t./005.jpg
+  featured_image: /images/reviews/dimepiece-by-craft/005.jpg
 product_info:
   title: Product Info for Dimepiece by C.R.A.F.T.
   product_type: Flower / Bud
@@ -30,18 +30,18 @@ scores:
   quality: 9
   overall_score: 28
 photos:
-  - /images/reviews/dimepiece-by-c.r.a.f.t./001.jpg
-  - /images/reviews/dimepiece-by-c.r.a.f.t./002.jpg
-  - /images/reviews/dimepiece-by-c.r.a.f.t./003.jpg
-  - /images/reviews/dimepiece-by-c.r.a.f.t./004.jpg
-  - /images/reviews/dimepiece-by-c.r.a.f.t./005.jpg
-  - /images/reviews/dimepiece-by-c.r.a.f.t./006.jpg
-  - /images/reviews/dimepiece-by-c.r.a.f.t./007.jpg
-  - /images/reviews/dimepiece-by-c.r.a.f.t./008.jpg
-  - /images/reviews/dimepiece-by-c.r.a.f.t./009.jpg
-  - /images/reviews/dimepiece-by-c.r.a.f.t./010.jpg
-  - /images/reviews/dimepiece-by-c.r.a.f.t./011.jpg
-  - /images/reviews/dimepiece-by-c.r.a.f.t./012.jpg
+  - /images/reviews/dimepiece-by-craft/001.jpg
+  - /images/reviews/dimepiece-by-craft/002.jpg
+  - /images/reviews/dimepiece-by-craft/003.jpg
+  - /images/reviews/dimepiece-by-craft/004.jpg
+  - /images/reviews/dimepiece-by-craft/005.jpg
+  - /images/reviews/dimepiece-by-craft/006.jpg
+  - /images/reviews/dimepiece-by-craft/007.jpg
+  - /images/reviews/dimepiece-by-craft/008.jpg
+  - /images/reviews/dimepiece-by-craft/009.jpg
+  - /images/reviews/dimepiece-by-craft/010.jpg
+  - /images/reviews/dimepiece-by-craft/011.jpg
+  - /images/reviews/dimepiece-by-craft/012.jpg
 ---
 
 Hola Chinga! This weed is exactly as strong as the label on the bag says. This place is new to me but certainly not new to the Bay Area. I get the impression I am late to the party, honestly. This is legitimately some of the best weed I have bought anywhere and it is like half or less the prices I generally pay at Harborside. And they deal in much larger quantities which is also awesome for the regular consumer. So like 2 thumbs up on my first experience with CRAFT.

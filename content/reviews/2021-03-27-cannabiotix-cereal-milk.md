@@ -13,7 +13,7 @@ seo:
   description: >-
     A review of Cannabiotix' Cereal Milk cannabis strain. Purchase in Oakland,
     CA at Harborside Dispensary. This is the furriest bud I have ever seen.
-  featured_image: /images/reviews/cannabiotix'-cereal-milk/005.jpg
+  featured_image: /images/reviews/cannabiotix-cereal-milk/005.jpg
 product_info:
   title: Product Info for Cannabiotix' Cereal Milk
   product_type: Flower / Bud
@@ -32,14 +32,14 @@ scores:
   quality: 9
   overall_score: 24
 photos:
-  - /images/reviews/cannabiotix'-cereal-milk/001.jpg
-  - /images/reviews/cannabiotix'-cereal-milk/002.jpg
-  - /images/reviews/cannabiotix'-cereal-milk/003.jpg
-  - /images/reviews/cannabiotix'-cereal-milk/004.jpg
-  - /images/reviews/cannabiotix'-cereal-milk/005.jpg
-  - /images/reviews/cannabiotix'-cereal-milk/006.jpg
-  - /images/reviews/cannabiotix'-cereal-milk/007.jpg
-  - /images/reviews/cannabiotix'-cereal-milk/008.jpg
+  - /images/reviews/cannabiotix-cereal-milk/001.jpg
+  - /images/reviews/cannabiotix-cereal-milk/002.jpg
+  - /images/reviews/cannabiotix-cereal-milk/003.jpg
+  - /images/reviews/cannabiotix-cereal-milk/004.jpg
+  - /images/reviews/cannabiotix-cereal-milk/005.jpg
+  - /images/reviews/cannabiotix-cereal-milk/006.jpg
+  - /images/reviews/cannabiotix-cereal-milk/007.jpg
+  - /images/reviews/cannabiotix-cereal-milk/008.jpg
 ---
 
 Okay this is definitely one-hit bud. I am three bong hits deep and it's all swirly. In honor of the name of this strain I am listening to Milky Cereal by LL Cool J. I don't actually have any cereal right now. I'm in kind of an oatmeal space these days.

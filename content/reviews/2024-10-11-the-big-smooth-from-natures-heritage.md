@@ -13,7 +13,7 @@ seo:
   description: >-
     A review of The Big Smooth cannabis strain from Nature’s Heritage. Purchased
     at The Heirloom Collective in Amherst, MA
-  featured_image: /images/reviews/the-big-smooth-from-nature's-heritage/005.jpg
+  featured_image: /images/reviews/the-big-smooth-from-natures-heritage/005.jpg
 product_info:
   title: Product Info for The Big Smooth from Nature's Heritage
   product_type: Flower / Bud
@@ -32,13 +32,13 @@ scores:
   quality: 9
   overall_score: 27
 photos:
-  - /images/reviews/the-big-smooth-from-nature's-heritage/001.jpg
-  - /images/reviews/the-big-smooth-from-nature's-heritage/002.jpg
-  - /images/reviews/the-big-smooth-from-nature's-heritage/003.jpg
-  - /images/reviews/the-big-smooth-from-nature's-heritage/004.jpg
-  - /images/reviews/the-big-smooth-from-nature's-heritage/005.jpg
-  - /images/reviews/the-big-smooth-from-nature's-heritage/006.jpg
-  - /images/reviews/the-big-smooth-from-nature's-heritage/007.jpg
+  - /images/reviews/the-big-smooth-from-natures-heritage/001.jpg
+  - /images/reviews/the-big-smooth-from-natures-heritage/002.jpg
+  - /images/reviews/the-big-smooth-from-natures-heritage/003.jpg
+  - /images/reviews/the-big-smooth-from-natures-heritage/004.jpg
+  - /images/reviews/the-big-smooth-from-natures-heritage/005.jpg
+  - /images/reviews/the-big-smooth-from-natures-heritage/006.jpg
+  - /images/reviews/the-big-smooth-from-natures-heritage/007.jpg
 ---
 
 I'm now located in Amherst, MA. Where the colleges come from. It's a great spot and pretty close to the grow scene in MA, or at least some of it.

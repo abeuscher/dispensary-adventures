@@ -12,7 +12,7 @@ seo:
     A review of Wonderbrett's Orange Sunset Cannabis Strain purchased in
     Oakland, CA from Harborside Dispensary. This is good grass, if a little
     overpriced.
-  featured_image: /images/reviews/wonderbrett's-orange-sunset/005.jpg
+  featured_image: /images/reviews/wonderbretts-orange-sunset/005.jpg
 product_info:
   title: Product Info for Wonderbrett's Orange Sunset
   product_type: Flower / Bud
@@ -31,15 +31,15 @@ scores:
   quality: 9
   overall_score: 26
 photos:
-  - /images/reviews/wonderbrett's-orange-sunset/001.jpg
-  - /images/reviews/wonderbrett's-orange-sunset/002.jpg
-  - /images/reviews/wonderbrett's-orange-sunset/003.jpg
-  - /images/reviews/wonderbrett's-orange-sunset/004.jpg
-  - /images/reviews/wonderbrett's-orange-sunset/005.jpg
-  - /images/reviews/wonderbrett's-orange-sunset/006.jpg
-  - /images/reviews/wonderbrett's-orange-sunset/007.jpg
-  - /images/reviews/wonderbrett's-orange-sunset/008.jpg
-  - /images/reviews/wonderbrett's-orange-sunset/009.jpg
+  - /images/reviews/wonderbretts-orange-sunset/001.jpg
+  - /images/reviews/wonderbretts-orange-sunset/002.jpg
+  - /images/reviews/wonderbretts-orange-sunset/003.jpg
+  - /images/reviews/wonderbretts-orange-sunset/004.jpg
+  - /images/reviews/wonderbretts-orange-sunset/005.jpg
+  - /images/reviews/wonderbretts-orange-sunset/006.jpg
+  - /images/reviews/wonderbretts-orange-sunset/007.jpg
+  - /images/reviews/wonderbretts-orange-sunset/008.jpg
+  - /images/reviews/wonderbretts-orange-sunset/009.jpg
 ---
 
 So I got this after smoking the Orange Banana last week to see if the brand holds up in other strains. This is a sativa, and I can tell in the sense that I do not have to go lie down like I did with its brother. I gotta say – the aroma and taste of the bud are very similar to the Orange Banana.

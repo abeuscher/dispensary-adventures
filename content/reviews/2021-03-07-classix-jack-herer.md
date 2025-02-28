@@ -11,7 +11,7 @@ seo:
   description: >-
     A review of the Classix grown Jack Herer strain. Purchased at Harborside in
     Oakland, CA.
-  featured_image: /images/reviews/classix'-jack-herer/005.jpg
+  featured_image: /images/reviews/classix-jack-herer/005.jpg
 product_info:
   title: Product Info for Classix' Jack Herer
   product_type: Flower / Bud
@@ -30,17 +30,17 @@ scores:
   quality: 9
   overall_score: 25
 photos:
-  - /images/reviews/classix'-jack-herer/001.jpg
-  - /images/reviews/classix'-jack-herer/002.jpg
-  - /images/reviews/classix'-jack-herer/003.jpg
-  - /images/reviews/classix'-jack-herer/004.jpg
-  - /images/reviews/classix'-jack-herer/005.jpg
-  - /images/reviews/classix'-jack-herer/006.jpg
-  - /images/reviews/classix'-jack-herer/007.jpg
-  - /images/reviews/classix'-jack-herer/008.jpg
-  - /images/reviews/classix'-jack-herer/009.jpg
-  - /images/reviews/classix'-jack-herer/010.jpg
-  - /images/reviews/classix'-jack-herer/011.jpg
+  - /images/reviews/classix-jack-herer/001.jpg
+  - /images/reviews/classix-jack-herer/002.jpg
+  - /images/reviews/classix-jack-herer/003.jpg
+  - /images/reviews/classix-jack-herer/004.jpg
+  - /images/reviews/classix-jack-herer/005.jpg
+  - /images/reviews/classix-jack-herer/006.jpg
+  - /images/reviews/classix-jack-herer/007.jpg
+  - /images/reviews/classix-jack-herer/008.jpg
+  - /images/reviews/classix-jack-herer/009.jpg
+  - /images/reviews/classix-jack-herer/010.jpg
+  - /images/reviews/classix-jack-herer/011.jpg
 ---
 
 My initial impression is that this weed is both underpriced and overpackaged, which is a weird combination. Usually the bud that looks all weird and flashy is garbage and has a significant markup. Here the bud is like really fluffy, top shelf, super fresh and awesome, and it's priced at like middle shelf for the region. Yet more evidence that price and quality have a tenuous relationship at best in the weed industry.

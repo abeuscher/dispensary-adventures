@@ -13,7 +13,7 @@ seo:
   description: >-
     A review of L"orange, a cannabis strain from Cannabiotix. Purchased on
     Oakland, CA.
-  featured_image: /images/reviews/cannabiotix-l'orange/005.jpg
+  featured_image: /images/reviews/cannabiotix-lorange/005.jpg
 product_info:
   title: Product Info for Cannabiotix L'Orange
   product_type: Flower / Bud
@@ -32,12 +32,12 @@ scores:
   quality: 9
   overall_score: 27
 photos:
-  - /images/reviews/cannabiotix-l'orange/001.jpg
-  - /images/reviews/cannabiotix-l'orange/002.jpg
-  - /images/reviews/cannabiotix-l'orange/003.jpg
-  - /images/reviews/cannabiotix-l'orange/004.jpg
-  - /images/reviews/cannabiotix-l'orange/005.jpg
-  - /images/reviews/cannabiotix-l'orange/006.jpg
+  - /images/reviews/cannabiotix-lorange/001.jpg
+  - /images/reviews/cannabiotix-lorange/002.jpg
+  - /images/reviews/cannabiotix-lorange/003.jpg
+  - /images/reviews/cannabiotix-lorange/004.jpg
+  - /images/reviews/cannabiotix-lorange/005.jpg
+  - /images/reviews/cannabiotix-lorange/006.jpg
 ---
 
 Unlike Runaway Bride and so many others, this is not a strain where one wonders why it is named like it is. Opening up the jar is like mashing your nose into a pile of orange zest. Next to some blueberry cookies my girlfriend grew last year, this is the most unique and specific smelling bud I think I have ever come across. And it is delicious.

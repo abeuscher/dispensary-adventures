@@ -11,7 +11,7 @@ seo:
   description: >-
     A review of the Black Garlic cannabis strain from Paul's Boutique. Purchased
     in Portland, Maine at the Maine Cannabis Exchange.
-  featured_image: /images/reviews/black-garlic-by-paul's-boutique/005.jpg
+  featured_image: /images/reviews/black-garlic-by-pauls-boutique/005.jpg
 product_info:
   title: Product Info for Black Garlic by Paul's Boutique
   product_type: Flower / Bud
@@ -30,14 +30,14 @@ scores:
   quality: 8
   overall_score: 23
 photos:
-  - /images/reviews/black-garlic-by-paul's-boutique/001.jpg
-  - /images/reviews/black-garlic-by-paul's-boutique/002.jpg
-  - /images/reviews/black-garlic-by-paul's-boutique/003.jpg
-  - /images/reviews/black-garlic-by-paul's-boutique/004.jpg
-  - /images/reviews/black-garlic-by-paul's-boutique/005.jpg
-  - /images/reviews/black-garlic-by-paul's-boutique/006.jpg
-  - /images/reviews/black-garlic-by-paul's-boutique/007.jpg
-  - /images/reviews/black-garlic-by-paul's-boutique/008.jpg
+  - /images/reviews/black-garlic-by-pauls-boutique/001.jpg
+  - /images/reviews/black-garlic-by-pauls-boutique/002.jpg
+  - /images/reviews/black-garlic-by-pauls-boutique/003.jpg
+  - /images/reviews/black-garlic-by-pauls-boutique/004.jpg
+  - /images/reviews/black-garlic-by-pauls-boutique/005.jpg
+  - /images/reviews/black-garlic-by-pauls-boutique/006.jpg
+  - /images/reviews/black-garlic-by-pauls-boutique/007.jpg
+  - /images/reviews/black-garlic-by-pauls-boutique/008.jpg
 ---
 
 So it has been a while. I moved 3000 miles away from California, back to Massachusetts. One of the goals, among others, is to enter the cannabis industry in some fashion. So we'll see how that goes.

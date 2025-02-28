@@ -11,7 +11,7 @@ seo:
   description: >-
     A review of the Platinum Blue Dream Strain from King's Garden. Purchased at
     Harborside Oakland.
-  featured_image: /images/reviews/king's-garden-platinum-blue-dream/005.jpg
+  featured_image: /images/reviews/kings-garden-platinum-blue-dream/005.jpg
 product_info:
   title: Product Info for King's Garden Platinum Blue Dream
   product_type: Flower / Bud
@@ -30,13 +30,13 @@ scores:
   quality: 8
   overall_score: 21
 photos:
-  - /images/reviews/king's-garden-platinum-blue-dream/001.jpg
-  - /images/reviews/king's-garden-platinum-blue-dream/002.jpg
-  - /images/reviews/king's-garden-platinum-blue-dream/003.jpg
-  - /images/reviews/king's-garden-platinum-blue-dream/004.jpg
-  - /images/reviews/king's-garden-platinum-blue-dream/005.jpg
-  - /images/reviews/king's-garden-platinum-blue-dream/006.jpg
-  - /images/reviews/king's-garden-platinum-blue-dream/007.jpg
+  - /images/reviews/kings-garden-platinum-blue-dream/001.jpg
+  - /images/reviews/kings-garden-platinum-blue-dream/002.jpg
+  - /images/reviews/kings-garden-platinum-blue-dream/003.jpg
+  - /images/reviews/kings-garden-platinum-blue-dream/004.jpg
+  - /images/reviews/kings-garden-platinum-blue-dream/005.jpg
+  - /images/reviews/kings-garden-platinum-blue-dream/006.jpg
+  - /images/reviews/kings-garden-platinum-blue-dream/007.jpg
 ---
 
 When I first got to California around 2011, I found the dispensary scene pretty overwhelming. It took me some time to get comfortable with all the snobbery, strains, and such. I felt sort of “uncool” on my side of the counter, trying to discern what I was buying in a consumer environment that was totally unfamiliar. I struggle to think of other times when a seller's market so rapidly became a buyer's market. And it was not lost on me then nor is it now that a lot of the schpiel from the budtenders was uninformed puffery designed to move whatever they had too much of in stock – just like a restaurant that pushes its specials.
