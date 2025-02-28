@@ -1,7 +1,5 @@
 # Node modules
 node_modules/
-assets/images/
-assets/images/**/*
 
 # Output directory (publish directory)
 dist/
