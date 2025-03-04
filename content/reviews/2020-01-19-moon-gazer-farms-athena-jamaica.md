@@ -32,10 +32,10 @@ scores:
   quality: 7
   overall_score: 21
 photos:
-  - /images/reviews/moon-gazer-farm's-athena-jamaica/001.jpg
-  - /images/reviews/moon-gazer-farm's-athena-jamaica/002.jpg
-  - /images/reviews/moon-gazer-farm's-athena-jamaica/003.jpg
-  - /images/reviews/moon-gazer-farm's-athena-jamaica/004.jpg
+  - /images/reviews/moon-gazer-farm_s-athena-jamaica/001.jpg
+  - /images/reviews/moon-gazer-farm_s-athena-jamaica/002.jpg
+  - /images/reviews/moon-gazer-farm_s-athena-jamaica/003.jpg
+  - /images/reviews/moon-gazer-farm_s-athena-jamaica/004.jpg
 ---
 
 I can't seem to remember the name of this strain for more than about thirty seconds. For this reason I feel that Athena Jamaica is the Roman J. Israel Esq. of strain names.

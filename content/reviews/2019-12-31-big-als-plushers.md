@@ -30,7 +30,7 @@ scores:
   quality: 9
   overall_score: 26
 photos:
-  - /images/reviews/big-al's-plushers/001.jpg
+  - /images/reviews/big-al_s-plushers/001.jpg
 ---
 
 My second offering from Big Al's was just as great a pleasure as the first. Beautiful to look at, beautiful to smoke, and hits you in the face with a two by four.

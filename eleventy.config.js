@@ -3,8 +3,8 @@ import { HtmlBasePlugin, IdAttributePlugin, InputPathToUrlTransformPlugin } from
 import BuildScripts from "./build/scripts.js";
 import BuildStyles from "./build/styles.js";
 import addFilters from "./config/filters.js";
-import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import htmlmin from "html-minifier";
+import path from "path";
 
 console.log("eleventy start");
 
@@ -18,20 +18,20 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 
   // Passthrough copy
-  // Static asset handling
   eleventyConfig.addPassthroughCopy({ "public/": "/" });
   eleventyConfig.addPassthroughCopy({ "assets/images/": "/images/" });
 
   // Collections
   eleventyConfig.addCollection("reviews", function (collectionApi) {
     return collectionApi.getFilteredByGlob("content/reviews/**/*.md").sort((a, b) => {
-      // Sort by date descending
       return new Date(b.data.date || 0) - new Date(a.data.date || 0);
     });
   });
+
   eleventyConfig.addGlobalData("site", {
     url: "https://dispensaryadventures.com",
   });
+
   // HTML minification
   eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
     if (outputPath?.endsWith(".html")) {
@@ -45,9 +45,34 @@ export default async function (eleventyConfig) {
     return content;
   });
 
+  // Simple responsive image shortcode that references pre-processed images
+  eleventyConfig.addShortcode("responsiveImage", function (src, alt, sizes, className = "") {
+    if (!src) return "";
+
+    // Handle path formatting
+    const imgPath = src.startsWith("/") ? src.substring(1) : src;
+    const directory = path.dirname(imgPath);
+    const filename = path.basename(imgPath, path.extname(imgPath));
+
+    // Define widths
+    const widths = [400, 800, 1200];
+
+    // Generate srcsets
+    const webpSrcset = widths.map((w) => `/${directory}/${filename}-${w}.webp ${w}w`).join(", ");
+
+    const jpegSrcset = widths.map((w) => `/${directory}/${filename}-${w}.jpg ${w}w`).join(", ");
+
+    // Original as fallback
+    const fallbackSrc = `/${imgPath}`;
+
+    // Build HTML with clean formatting
+    return `<picture><source type="image/webp" srcset="${webpSrcset}" sizes="${sizes || "100vw"}"><source type="image/jpeg" srcset="${jpegSrcset}" sizes="${sizes || "100vw"}"><img src="${fallbackSrc}" alt="${alt || ""}" ${className ? `class="${className}"` : ""} loading="lazy" decoding="async"></picture>`;
+  });
+
   // Watch for changes to scripts and styles
   eleventyConfig.addWatchTarget("./scripts/**/*.js");
   eleventyConfig.addWatchTarget("./styles/**/*.scss");
+  eleventyConfig.addWatchTarget("./assets/images/**/*");
 
   // Build scripts and styles
   BuildStyles(eleventyConfig);

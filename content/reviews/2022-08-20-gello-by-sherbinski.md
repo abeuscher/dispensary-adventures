@@ -1,7 +1,7 @@
 ---
 layout: review.njk
 title: Gello by Sherbinski
-date: '2022-08-20T00:00:00.000Z'
+date: "2022-08-20T00:00:00.000Z"
 slug: gello-by-sherbinski
 permalink: /2022/08/20/gello-by-sherbinski/
 short_review: Seriously incapacitating. Sherbinski is fun to say and fun to smoke.
@@ -21,8 +21,8 @@ product_info:
   cost: 60
   weight: 3.5
   listed_thc_percentage: 33.01
-  package_date: '2022-06-27'
-  purchase_date: '2022-07-28'
+  package_date: "2022-06-27"
+  purchase_date: "2022-07-28"
   dispensary: Harborside
 scores:
   strength: 9
@@ -35,7 +35,6 @@ photos:
   - /images/reviews/gello-by-sherbinski/003.jpg
   - /images/reviews/gello-by-sherbinski/004.jpg
   - /images/reviews/gello-by-sherbinski/005.jpg
-  - /images/reviews/gello-by-sherbinski/006.jpg
 ---
 
 With a name like Sherbinski, it's gotta be good.

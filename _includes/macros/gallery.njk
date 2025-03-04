@@ -1,11 +1,12 @@
-{% macro gallery(photos) %}
+{% macro gallery(photos, title) %}
     <section class="photos-block bg-black">
         <div class="content-wrapper">
             <div class="swiper" id="review-carousel">
                 <div class="swiper-wrapper">
                     {% for photo in photos %}
                         <div class="swiper-slide">
-                            <img src="{{ photo }}" alt="{{ title }}"/>
+                            {% set imageSizes = "(min-width: 1024px) 2016px, (min-width: 800px) 1200px, (min-width: 400px) 800px, 400px" %}
+                            {% responsiveImage photo, "", imageSizes, "swiper-img" %}
                         </div>
                     {% endfor %}
                 </div>

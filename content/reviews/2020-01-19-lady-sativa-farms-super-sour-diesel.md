@@ -30,9 +30,9 @@ scores:
   quality: 8
   overall_score: 24
 photos:
-  - /images/reviews/lady-sativa-farm's-super-sour-diesel/001.jpg
-  - /images/reviews/lady-sativa-farm's-super-sour-diesel/002.jpg
-  - /images/reviews/lady-sativa-farm's-super-sour-diesel/003.jpg
+  - /images/reviews/lady-sativa-farm_s-super-sour-diesel/001.jpg
+  - /images/reviews/lady-sativa-farm_s-super-sour-diesel/002.jpg
+  - /images/reviews/lady-sativa-farm_s-super-sour-diesel/003.jpg
 ---
 
 This bud is from a pretty interesting little dispensary named Solful up in Sebastopol. They sell and package and price their weed very differently than other places around here and it's actually a pretty big improvement over a lot of other places.

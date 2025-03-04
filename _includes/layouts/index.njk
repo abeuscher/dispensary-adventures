@@ -1,6 +1,9 @@
 ---
 layout: base.njk
-permalink: /
+title: "Dispensary Adventures | Home"
+eleventyComputed:
+  title: "{{ title }}"
+  description: "{% if seo and seo.description %}{{ seo.description }}{% else %}{{ short_review }}{% endif %}"
 ---
 {% from "../macros/blog-thumb.njk" import blogthumb %}
 

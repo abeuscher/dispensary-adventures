@@ -30,10 +30,10 @@ scores:
   quality: 6
   overall_score: 20
 photos:
-  - /images/reviews/harborside-farms'-black-mamba/001.jpg
-  - /images/reviews/harborside-farms'-black-mamba/002.jpg
-  - /images/reviews/harborside-farms'-black-mamba/003.jpg
-  - /images/reviews/harborside-farms'-black-mamba/004.jpg
+  - /images/reviews/harborside-farms_-black-mamba/001.jpg
+  - /images/reviews/harborside-farms_-black-mamba/002.jpg
+  - /images/reviews/harborside-farms_-black-mamba/003.jpg
+  - /images/reviews/harborside-farms_-black-mamba/004.jpg
 ---
 
 This is pretty much what I expect from the lower tier / bargain shelf of grass. It's a little on the weak side, not the most lovely, and it's a bit crumbly. I think that the crumble comes from being overcured, but I could totally be wrong about that.

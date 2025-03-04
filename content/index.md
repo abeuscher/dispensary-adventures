@@ -3,6 +3,8 @@ layout: index.njk
 title: "Dispensary Adventures | Home"
 permalink: "/"
 seo:
+  title: Dispensary Adventures | Home
+  og_title: Dispensary Adventures
   description: "I am a middle aged professional living in Amherst, MA. This is a series of reviews of the cannabis that I buy and smoke."
 ---
 

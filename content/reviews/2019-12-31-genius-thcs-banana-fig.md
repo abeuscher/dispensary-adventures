@@ -30,8 +30,8 @@ scores:
   quality: 7
   overall_score: 18
 photos:
-  - /images/reviews/genius-thc's-banana-fig/001.jpg
-  - /images/reviews/genius-thc's-banana-fig/002.jpg
+  - /images/reviews/genius-thc_s-banana-fig/001.jpg
+  - /images/reviews/genius-thc_s-banana-fig/002.jpg
 ---
 
 Generally speaking I have not seen a lot of brands consistently appear in stores or particularly denote quality. I've had a couple of experiences with Genius THC in the past where their products appeared to be overpackaged and very target-market looking. This third was no exception. There is a lot of bluster on the box  about how Genius is a really smart choice for you. The tag line is “strains for brains”.

@@ -3,13 +3,18 @@
         <article class="inner">
             <div class="thumb">
                 {% if post.data.seo and post.data.seo.featured_image %}
-                    <img src="{{ post.data.seo.featured_image | imgResize(346, 260) }}" alt="{{ post.data.title }}"/>
+                    {% set imageAlt = post.data.title %}
+                    {% set imageSrc = post.data.seo.featured_image %}
+                    {% set imageSizes = "(min-width: 640px) 346px, 400px" %}
+                    {% responsiveImage imageSrc,
+                    imageAlt,
+                    imageSizes %}
                 {% else %}
                     <div class="placeholder-image">No Image</div>
                 {% endif %}
             </div>
             <div class="content">
-                <h2>{{ post.data.seo.title }}</h2>
+                <h2>{{ post.data.title | safe }}</h2>
             </div>
             <div class="post-date">{{ post.data.date | date('MM/dd/yyyy') }}</div>
         </article>

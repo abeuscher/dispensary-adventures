@@ -30,7 +30,7 @@ scores:
   quality: 6
   overall_score: 21
 photos:
-  - /images/reviews/madrone's-watermelon-rancher/001.jpg
+  - /images/reviews/madrone_s-watermelon-rancher/001.jpg
 ---
 
 This was my first sampling from underneath the top shelf and it was very positive. We bought this grass at the same time as [Big Al's Plushers](https://dispensaryadventures.com/2019/12/31/review-big-als-plushers/) and [Genius THC's Banana Fig](https://dispensaryadventures.com/2019/12/31/review-genius-thcs-banana-fig/), so there was a direct comparison being made between these three. Big Al's offering surely scores above these buds, but honestly this stuff beat the pants off the Banana Fig which came in 20 bucks higher on cost.
