@@ -1,0 +1,86 @@
+@use "sass:map";
+@use "sass:list";
+@use "_variables.scss" as *;
+
+@mixin bp($breakpoint) {
+  $breakpoints: $bps;
+
+  @if map.has-key($breakpoints, $breakpoint) {
+    $value: map.get($breakpoints, $breakpoint);
+    @media only screen and (min-width: #{$value}) {
+      @content;
+    }
+  } @else {
+    @error "Unknown breakpoint: #{$breakpoint}. Available breakpoints are: #{map.keys($breakpoints)}.";
+  }
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    padding-top: calc($height / $width * 100%);
+  }
+
+  & > * {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+@mixin no-padding($side) {
+  @if $side == "all" {
+    .no-padding {
+      padding: 0 !important;
+    }
+  } @else {
+    .no-padding-#{$side} {
+      padding-#{$side}: 0 !important;
+    }
+  }
+}
+
+@mixin arrow($direction, $color, $size) {
+  display: block;
+  height: 0;
+  width: 0;
+
+  @if $direction == "top" {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: $size solid $color;
+  } @else if $direction == "right" {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+  } @else if $direction == "bottom" {
+    border-top: $size solid $color;
+    border-right: $size solid transparent;
+    border-left: $size solid transparent;
+  } @else if $direction == "left" {
+    border-top: $size solid transparent;
+    border-right: $size solid $color;
+    border-bottom: $size solid transparent;
+  } @else if $direction == "top-left" {
+    border-top: $size solid $color;
+    border-right: $size solid transparent;
+  } @else if $direction == "top-right" {
+    border-top: $size solid $color;
+    border-left: $size solid transparent;
+  } @else if $direction == "bottom-left" {
+    border-bottom: $size solid $color;
+    border-right: $size solid transparent;
+  } @else if $direction == "bottom-right" {
+    border-bottom: $size solid $color;
+    border-left: $size solid transparent;
+  }
+}
+
+@mixin ds-transition() {
+  transition: 0.4s cubic-bezier(0.335, 0.815, 0.47, 1);
+}

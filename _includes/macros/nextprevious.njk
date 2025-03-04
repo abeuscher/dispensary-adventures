@@ -1,0 +1,27 @@
+{% from "./blog-thumb.njk" import blogthumb %}
+
+{%- macro nextprevious(data, current) -%}
+    {%- if not current.slug and current.data -%}
+        {%- set current = current.data -%}
+    {%- endif -%}
+
+    {%- if data and current -%}
+        {%- set prevNext = data | getPrevNext(current) -%}
+        <section class="prev-next">
+            <div class="content-wrapper flex padding-both">
+                <div class="prev-entry col-half">
+                    {%- if prevNext.previousEntry -%}
+                        <p class="pagination-label">Previous Post</p>
+                        {{ blogthumb(prevNext.previousEntry) }}
+                    {%- endif -%}
+                </div>
+                <div class="next-entry col-half">
+                    {%- if prevNext.nextEntry -%}
+                        <p class="pagination-label">Next Post</p>
+                        {{ blogthumb(prevNext.nextEntry) }}
+                    {%- endif -%}
+                </div>
+            </div>
+        </section>
+    {%- endif -%}
+{%- endmacro -%}

@@ -1,0 +1,14 @@
+@use "../../node_modules/normalize.css/normalize.css" as normalize;
+
+@use "../../node_modules/swiper/swiper.scss" as swiper;
+@use "../../node_modules/swiper/modules/pagination.scss";
+@use "../../node_modules/swiper/modules/navigation.scss";
+
+@use "_footer.scss" as footer;
+@use "_header.scss" as header;
+@use "_home.scss" as home;
+@use "_gallery.scss" as gallery;
+@use "_sort-table.scss" as sortable;
+@use "_single-review.scss" as review;
+@use "_buttons.scss" as buttons;
+@use "_base.scss" as base;

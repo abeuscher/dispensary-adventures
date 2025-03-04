@@ -1,0 +1,19 @@
+{% macro gallery(photos, title) %}
+    <section class="photos-block bg-black">
+        <div class="content-wrapper">
+            <div class="swiper" id="review-carousel">
+                <div class="swiper-wrapper">
+                    {% for photo in photos %}
+                        <div class="swiper-slide">
+                            {% set imageSizes = "(min-width: 1024px) 2016px, (min-width: 800px) 1200px, (min-width: 400px) 800px, 400px" %}
+                            {% responsiveImage photo, "", imageSizes, "swiper-img" %}
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+{% endmacro %}

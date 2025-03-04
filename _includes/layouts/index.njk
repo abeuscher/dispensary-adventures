@@ -1,0 +1,23 @@
+---
+layout: base.njk
+title: "Dispensary Adventures | Home"
+eleventyComputed:
+  title: "{{ title }}"
+  description: "{% if seo and seo.description %}{{ seo.description }}{% else %}{{ short_review }}{% endif %}"
+---
+{% from "../macros/blog-thumb.njk" import blogthumb %}
+
+<article>
+  <div class="content-wrapper padding-top">{{ content | safe }}</div>
+  <div class="content-wrapper padding-bottom">
+    <div class="home-blogroll" id="post-bucket">
+      {% if collections.reviews %}
+        {% for post in collections.reviews %}
+          {{ blogthumb(post) }}
+        {% endfor %}
+      {% else %}
+        <p>No reviews found. Check collection configuration.</p>
+      {% endif %}
+    </div>
+  </div>
+</article>

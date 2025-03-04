@@ -1,6 +1,6 @@
-const pug = require("pug");
-const path = require("path");
-const fs = require("fs");
+import * as fs from "fs";
+import * as path from "path";
+import * as pug from "pug";
 
 const pugFunctionPlugin = {
   name: "pug-function",
@@ -29,4 +29,4 @@ const pugFunctionPlugin = {
   },
 };
 
-module.exports = pugFunctionPlugin;
+export default pugFunctionPlugin;

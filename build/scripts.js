@@ -1,16 +1,17 @@
-const esbuild = require("esbuild");
-const fs = require("fs");
-const path = require("path");
-const pugFunctionPlugin = require("./pug-function.js");
+import * as esbuild from "esbuild";
+import * as fs from "fs";
+import * as path from "path";
+
+import pugFunctionPlugin from "./pug-function.js";
 
 const BuildScripts = async (eleventyConfig, isWatchMode = false) => {
-  const outputDir = path.join(__dirname, "../dist/scripts");
+  const outputDir = path.join(path.resolve(), "dist", "scripts");
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
   const esbuildConfig = {
-    entryPoints: ["./src/scripts/app.js"], // Only build app.js
+    entryPoints: ["./assets/scripts/app.js"], // Only build app.js
     bundle: true,
     outdir: outputDir,
     loader: {
@@ -24,7 +25,7 @@ const BuildScripts = async (eleventyConfig, isWatchMode = false) => {
 
   try {
     if (isWatchMode) {
-      eleventyConfig.addWatchTarget("./src/scripts/**/*.js"); // Watch all JS files for changes
+      eleventyConfig.addWatchTarget("./assets/scripts/**/*.js"); // Watch all JS files for changes
       eleventyConfig.on("beforeBuild", async () => {
         await esbuild.build(esbuildConfig); // Only build app.js on any change
         console.log("Rebuilding app.js due to script changes...");
@@ -39,4 +40,4 @@ const BuildScripts = async (eleventyConfig, isWatchMode = false) => {
   }
 };
 
-module.exports = { BuildScripts };
+export default BuildScripts;

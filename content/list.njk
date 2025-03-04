@@ -1,0 +1,36 @@
+---
+layout: base.njk
+title: "Comparison Chart"
+permalink: "/list/"
+seo:
+  title: "Dispensary Adventures | Comparison Chart"
+  description: "A chart comparing the various data on this site against each other."
+---
+{% set reviewsData = [] %}
+{% for review in collections.reviews %}
+  {% set reviewObj = {} %}
+
+  {# Add all frontmatter data #}
+  {% for key, value in review.data %}
+    {% if key != "page" and key != "collections" and key != "eleventy" and key != "content" %}
+      {% set reviewObj = reviewObj | setAttribute(key, value) %}
+    {% endif %}
+  {% endfor %}
+
+  {# Add additional properties from the review object #}
+  {% set reviewObj = reviewObj | setAttribute("url", review.url) %}
+  {% set reviewObj = reviewObj | setAttribute("fileSlug", review.fileSlug) %}
+
+  {% set reviewsData = (reviewsData.push(reviewObj), reviewsData) %}
+{% endfor %}
+
+<script>
+  var productData = {{ reviewsData | json | safe }};
+</script>
+<article>
+  <section class="article-main-block padding-both">
+    <div class="content-wrapper">
+      <div id="product-table-sortable"></div>
+    </div>
+  </section>
+</article>
