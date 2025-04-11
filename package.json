@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npm run process-images && npx @11ty/eleventy --serve",
     "build": "npm run clean && npm run process-images && npx @11ty/eleventy",
+    "buildonly": "npm run clean && npx @11ty/eleventy",
     "watch": "npx @11ty/eleventy --watch",
     "clean": "rm -rf dist",
     "format": "prettier --write .",

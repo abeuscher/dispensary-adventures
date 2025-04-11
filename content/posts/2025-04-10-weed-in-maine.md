@@ -4,7 +4,7 @@ title: A New Thing
 date: "2025-04-10T00:00:00.000Z"
 slug: new-england-weed-scene
 permalink: /2025/04/10/new-england-weed-scene/
-subtitle: Let's Do Something!
+subtitle: Some thoughts on my last year in New England trying and failing to get involved in cannabis.
 seo:
   title: Back in New England
   og_title: Back in New England
