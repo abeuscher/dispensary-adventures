@@ -6,8 +6,8 @@ import path from "path";
 import sharp from "sharp";
 
 // Configuration
-const inputDir = "./assets/images/reviews";
-const outputDir = "./dist/images/reviews";
+const inputDir = "./assets/images/";
+const outputDir = "./dist/images/";
 const widths = [400, 800, 1200, 2016];
 const formats = ["webp", "jpeg"];
 

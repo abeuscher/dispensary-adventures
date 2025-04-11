@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: A New Thing
+title: Back in New England
 date: "2025-04-10T00:00:00.000Z"
 slug: new-england-weed-scene
 permalink: /2025/04/10/new-england-weed-scene/
@@ -9,7 +9,7 @@ seo:
   title: Back in New England
   og_title: Back in New England
   description: Some thoughts on my last year in New England trying and failing to get involved in cannabis.
-  featured_image: /images/reviews/big-al_s-mai-tai-flower/001.jpg
+  featured_image: /images/ne-thumb.jpg
 ---
 
 I have been back in New England for a little over a year now. I haven't been writing reviews because frankly I have been smoking either bargain weed or home grown outdoor weed. Times are hard. I haven't had a full time job in a couple of years.
