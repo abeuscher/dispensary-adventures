@@ -27,6 +27,19 @@ export default async function (eleventyConfig) {
       return new Date(b.data.date || 0) - new Date(a.data.date || 0);
     });
   });
+  eleventyConfig.addCollection("posts", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("content/posts/**/*.md").sort((a, b) => {
+      return new Date(b.data.date || 0) - new Date(a.data.date || 0);
+    });
+  });
+  eleventyConfig.addCollection("blogroll", function (collectionApi) {
+    return [
+      ...collectionApi.getFilteredByGlob("content/reviews/**/*.md"),
+      ...collectionApi.getFilteredByGlob("content/posts/**/*.md"),
+    ].sort((a, b) => {
+      return new Date(b.data.date || 0) - new Date(a.data.date || 0);
+    });
+  });
 
   eleventyConfig.addGlobalData("site", {
     url: "https://dispensaryadventures.com",

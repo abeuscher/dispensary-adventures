@@ -11,8 +11,8 @@ eleventyComputed:
   <div class="content-wrapper padding-top">{{ content | safe }}</div>
   <div class="content-wrapper padding-bottom">
     <div class="home-blogroll" id="post-bucket">
-      {% if collections.reviews %}
-        {% for post in collections.reviews %}
+      {% if collections.blogroll %}
+        {% for post in collections.blogroll %}
           {{ blogthumb(post) }}
         {% endfor %}
       {% else %}

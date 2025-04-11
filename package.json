@@ -4,7 +4,7 @@
   "type": "module",
   "description": "Static site built with 11ty, Swiper, Sass, and Contentful for dispensaryadventures.com",
   "scripts": {
-    "start": "npm run process-images && npx @11ty/eleventy --serve --quiet",
+    "start": "npm run process-images && npx @11ty/eleventy --serve",
     "build": "npm run clean && npm run process-images && npx @11ty/eleventy",
     "watch": "npx @11ty/eleventy --watch",
     "clean": "rm -rf dist",
